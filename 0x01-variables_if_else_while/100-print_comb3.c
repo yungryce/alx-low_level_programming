@@ -17,6 +17,8 @@ int main(void)
 			{
 				putchar(initial);
 				putchar(final);
+				if (initial == 56 && final == 57)
+					break;
 				putchar(',');
 				putchar(' ');
 			}
