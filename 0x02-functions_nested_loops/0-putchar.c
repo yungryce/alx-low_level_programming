@@ -1,5 +1,10 @@
 #include <main.h>
 
+/**
+ * main - This function uses the user defined main.h lib
+ * to print chars
+ * Return: 0 as exit status
+ */
 int main(void)
 {
 	_putchar('_');
