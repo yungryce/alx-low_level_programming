@@ -7,15 +7,9 @@
  */
 int main(void)
 {
-    print_number(98);
-    _putchar('\n');
-    print_number(402);
-    _putchar('\n');
-    print_number(1024);
-    _putchar('\n');
-    print_number(0);
-    _putchar('\n');
-    print_number(-98);
-    _putchar('\n');
+    print_line(0);
+    print_line(2);
+    print_line(10);
+    print_line(-4);
     return (0);
 }
