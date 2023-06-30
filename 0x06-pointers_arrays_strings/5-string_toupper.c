@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - change lowercase to uppercase
- * @s:string
+ * @c:string
  * Return:char
  */
 
