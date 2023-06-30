@@ -6,20 +6,20 @@
 * and then adds a terminating null byte.
 * @dest: append destination string
 * @src: source string
-* Returns: pointer to the resulting string dest
+* Return: pointer to the resulting string dest
 */
 
 char *_strcat(char *dest, char *src)
 {
-        int i, j;
+	int i, j;
 
-        for (j = 0; dest[j] != '\0'; j++)
-                ;
-        for (i = 0; src[i] != '\0'; i++)
-        {
-                dest[j] = src[i];
-                j++;
-        }
-        dest[j] = '\0';
-        return (dest);
+	for (j = 0; dest[j] != '\0'; j++)
+		;
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[j] = src[i];
+		j++;
+	}
+	dest[j] = '\0';
+	return (dest);
 }
