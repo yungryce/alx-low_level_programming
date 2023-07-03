@@ -2,8 +2,8 @@
 
 /**
  * *_strchr - function that locates a character in a string.
- * @s: 
- * @c:
+ * @s: pointer to the first occurrence of the character c
+ * @c: character to start copy
  * Return: pointer to the first occurrence of the character c in the string s,
  * or NULL if the character is not found
  */
@@ -11,14 +11,13 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	char *d[];
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
-			break;
+		{
+			return (&s[i]);
+		}
 	}
-	for (j = 0; s[j] != '\0'; j++)
-		s[j] = s[i];
 	return (s);
 }
