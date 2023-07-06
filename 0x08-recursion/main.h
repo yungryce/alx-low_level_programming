@@ -9,3 +9,6 @@ int _actual_root(int n, int i);
 int is_prime_number(int n);
 int _prime_checker(int a, int b);
 int is_palindrome(char *s);
+int _strlen_recursion(char *s);
+int pal_checker(char *s, int i, int j);
+int wildcmp(char *s1, char *s2);
