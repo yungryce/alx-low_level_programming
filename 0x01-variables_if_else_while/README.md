@@ -39,9 +39,9 @@ if (condition) {
 }
 ```
 
-## The else if Statement
+## The `else if` Statement
 
-The else if statement allows you to test multiple conditions and execute different code blocks depending on the conditions. Here's the syntax of the else if statement:
+The `else if` statement allows you to test multiple conditions and execute different code blocks depending on the conditions. Here's the syntax of the else if statement:
 
 ```c
 if (condition1) {
@@ -53,9 +53,9 @@ if (condition1) {
 }
 ```
 
-## The else Statement
+## The `else` Statement
 
-The else statement allows you to specify a code block to execute if the condition in the preceding if or else if statement is false. Here's the syntax of the else statement:
+The `else` statement allows you to specify a code block to execute if the condition in the preceding if or else if statement is false. Here's the syntax of the else statement:
 
 ```c
 if (condition) {
