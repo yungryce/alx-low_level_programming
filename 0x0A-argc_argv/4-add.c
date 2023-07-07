@@ -12,17 +12,32 @@
 
 int main(int argc, char **argv)
 {
-	int i;
+        int i, sum = 0;
+	long int num;
+	char *endptr;
 
-	if (argc == 3)
+	if (argc == 1)
 	{
-		for (i = 1; i < argc - 1; i++)
-			printf("%d\n", atoi(argv[i]) * atoi(argv[i + 1]));
+		printf("0\n");
 		return (0);
 	}
-	else
+
+	for (i = 1; i < argc; i++)
 	{
-		printf("%s\n", "Error");
-		return (1);
+		num = strtol(argv[i], &endptr, 0);
+
+		if (*endptr)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			sum += num;
+		}
 	}
+
+	printf("%d\n", sum);
+
+	return (0);
 }
