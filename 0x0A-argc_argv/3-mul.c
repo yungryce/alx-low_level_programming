@@ -12,13 +12,12 @@
 
 int main(int argc, char **argv)
 {
-        int i;
-
+	int i;
 
 	if (argc == 3)
 	{
 		for (i = 1; i < argc - 1; i++)
-                	printf("%d\n", atoi(argv[i]) * atoi(argv[i + 1]));
+			printf("%d\n", atoi(argv[i]) * atoi(argv[i + 1]));
 		return (0);
 	}
 	else
