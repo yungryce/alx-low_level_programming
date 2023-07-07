@@ -12,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-        int i, sum = 0;
+	int i, sum = 0;
 	long int num;
 	char *endptr;
 
