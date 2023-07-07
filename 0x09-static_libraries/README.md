@@ -19,29 +19,30 @@ To create a static library, follow these steps:
 1. Compile the source files: Use a compiler to compile the source files into object files. Object files have the extension `.o` and contain the compiled machine code for each individual source file. 
 
    ```bash
-   gcc -c file1.c -o file1.o
-   gcc -c file2.c -o file2.o
-   gcc -c file3.c -o file3.o
+   gcc -c *.c
    ```
-
-
-This will produce three object files: `file1.o`, `file2.o`, and `file3.o`.
+This will produce three object files all objects files with `.o` estension in present directory.
 
 2. Create the static library: Use the archiver tool (usually `ar`) to create the static library from the object files.
 
    ```bash
-   ar rcs libyourlibrary.a file1.o file2.o file3.o
+   ar rcs lib_name.a *.o
    ```
 
-This command creates a static library named `libyourlibrary.a` and includes the object files `file1.o`, `file2.o`, and `file3.o` in it.
+This command creates a static library named `liby_name.a` and includes the object files in it.
 
-3. Optional: Clean up intermediate files: If desired, remove the object files after creating the static library.
+3. After an archive is created, or modified, there is a need to index it. This index is later used by the compiler to speed up symbol-lookup inside the library, and to make sure that the order of the symbols in the library won't matter during compilation.
+    ```bash
+    ranlib lib_name.a
+    ```
+
+4. Optional: Clean up intermediate files: If desired, remove the object files after creating the static library.
 
    ```bash
-   rm file1.o file2.o file3.o
+   rm *.o
    ```
 
-The resulting static library (`libyourlibrary.a` in this example) can be linked with other programs during the compilation process by specifying the library name with the `-l` flag and the library path with the `-L` flag.
+The resulting static library (`lib_name.a` in this example) can be linked with other programs during the compilation process by specifying the library name with the `-l` flag and the library path with the `-L` flag.
 
 ```bash
 gcc -o myprogram main.c -L/path/to/library -lyourlibrary
