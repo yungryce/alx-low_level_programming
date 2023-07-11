@@ -2,19 +2,21 @@
 
 Dynamic memory allocation allows you to allocate memory at runtime, as opposed to static memory allocation which occurs at compile time. It provides flexibility in managing memory resources and is commonly used in programming languages like C and C++.
 
-In this markdown, we will focus on the 'malloc' function, which is used in C and C++ to dynamically allocate memory. 'malloc' stands for "memory allocation" and is declared in the 'stdlib.h' header file.
+In this markdown, we will focus on the `malloc` function, which is used in C and C++ to dynamically allocate memory. `malloc` stands for "memory allocation" and is declared in the `stdlib.h` header file.
 
 # Usage
 
-The 'mallo'c function allocates a block of memory of a specified size in bytes. Its syntax is as follows:
+The `malloc` function allocates a block of memory of a specified size in bytes. Its syntax is as follows:
 
-'''c
+```c
 void* malloc(size_t size);
-'''
-The 'size' parameter represents the number of bytes to be allocated. The function returns a pointer to the allocated memory block, or 'NULL' if the allocation fails.
+```
 
-Here's an example demonstrating the basic usage of 'malloc':
-'''c
+The `size` parameter represents the number of bytes to be allocated. The function returns a pointer to the allocated memory block, or `NULL` if the allocation fails.
+
+Here's an example demonstrating the basic usage of `malloc`:
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -40,7 +42,7 @@ int main() {
 
     return 0;
 }
-'''
+```
 
 In this example, we allocate memory for an array of integers using `malloc`. We multiply the desired number of elements by the size of each element using the `sizeof` operator to ensure the appropriate amount of memory is allocated. The return value of `malloc` is then assigned to the `numbers` pointer.
 
