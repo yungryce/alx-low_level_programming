@@ -1,4 +1,4 @@
-# Pointer Functions in C/C++
+# Pointer Functions
 
 ## Introduction
 
