@@ -2,8 +2,8 @@
 
 /**
  * print_name - prints a name
- * @*name: pointer to name to print
- * @(*f)(char *): pointer to function. pass name as argument
+ * @name: pointer to name to print
+ * @f: pointer to function. pass name as argument
  * Return: void
  */
 
