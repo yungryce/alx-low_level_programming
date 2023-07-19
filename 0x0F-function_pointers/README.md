@@ -1,7 +1,3 @@
-Certainly! Here's the updated README.md with the concise code samples illustrating confusion and pitfalls when using function pointers:
-
----
-
 # Pointer Functions in C/C++
 
 ## Introduction
