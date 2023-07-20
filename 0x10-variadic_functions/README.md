@@ -25,8 +25,9 @@ return_type function_name(type fixed_arg1, type fixed_arg2, ...);
 #include <stdio.h>
 
 int sum(int num_args, ...) {
-    va_list args;
-    va_start(args, num_args);
+    va_list args; //declares variable of type va_list in function
+    va_start(args, num_args);   //macro. 1st arg = variadic variable,
+                                //2nd arg = last known arg in fn
 
     int total = 0;
     for (int i = 0; i < num_args; ++i) {
