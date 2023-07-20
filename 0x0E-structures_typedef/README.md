@@ -1,5 +1,3 @@
-A README file in Markdown format is a common way to provide documentation and information about a project. Below is an example of a README.md file for a project that explains structures in the C programming language:
-
 # Structures in C
 
 This project aims to explain the concept of structures in the C programming language. Structures allow you to create user-defined data types that can hold multiple pieces of related data.
