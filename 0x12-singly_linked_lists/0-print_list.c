@@ -11,9 +11,9 @@ size_t print_list(const list_t *h)
 	const list_t *head = h;
 	size_t count = 0;
 
-	while (head != NULL)
+	while (head)
 	{
-		if (head->str == NULL)
+		if (!head->str)
 			printf("[0] (nil)\n");
 		else
 			printf("[%u] %s\n", head->len,  head->str);
