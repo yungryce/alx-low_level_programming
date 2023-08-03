@@ -14,16 +14,16 @@ void print_binary(unsigned long int n)
 	unsigned long int temp = n;
 
 	if (n == 0)
-		_putchar('0');
+		printf("0");
 
 	for (; (temp >>= 1) > 0; i++)
 		;
 	for (; i >= 0; i--)
 	{
 		if ((n >> i) & 1)
-			_putchar('1');
+			printf("1");
 		else
-			_putchar('0');
+			printf("0");
 	}
 }
 
