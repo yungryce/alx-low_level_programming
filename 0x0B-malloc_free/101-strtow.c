@@ -20,7 +20,7 @@ char **strtow(char *str)
 
 	while (str[i])
 	{
-		if (flag == 0 && str[i] != ' ')
+		if (str[i] != ' ' && flag = 0)
 			flag = 1;
 		if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
 		{
