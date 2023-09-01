@@ -12,16 +12,15 @@ void create_word(char **, char *, int, int, int);
  */
 char **strtow(char *str)
 {
-	int i, flag, len;
+	int i = 0, flag = 0, len = 0;
 	char **words;
 
 	if (str == NULL || str[0] == '\0' || (str[0] == ' ' && str[1] == '\0'))
 		return (NULL);
 
-	i = flag = len = 0;
 	while (str[i])
 	{
-		if (flag == 0 && str[i] != ' ')
+		if (str[i] != ' ' && flag = 0)
 			flag = 1;
 		if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
 		{
