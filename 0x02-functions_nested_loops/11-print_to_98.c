@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in reverse, followed by a new line
- * @s: string to be printed
+ * print_to_98 - prints all natural numbers
+ * @n: string to be printed
  */
 
 void print_to_98(int n)
