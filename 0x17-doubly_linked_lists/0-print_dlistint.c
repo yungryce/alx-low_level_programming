@@ -12,6 +12,9 @@ size_t print_dlistint(const dlistint_t *h)
 	const dlistint_t *head = h;
 	size_t count = 0;
 
+	if (!head)
+		return (count);
+
 	while (head->prev)
 		head = head->prev;
 
