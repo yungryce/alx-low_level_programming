@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint - 
+ * print_dlistint - Prints data of DLL
  * @h: Head of DLL
  *
  * Return: Node count
