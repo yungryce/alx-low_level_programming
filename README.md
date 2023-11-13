@@ -72,4 +72,3 @@ Remember that low-level programming requires a deeper understanding of hardware 
 As you explore low-level programming in C, consider referring to system documentation, hardware specifications, and relevant resources to gain a comprehensive understanding of the targeted system's intricacies.
 
 Feel free to experiment, explore further low-level programming techniques, and apply your knowledge to optimize code and interact with the system at a deeper level.
-
