@@ -40,7 +40,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	hash_node->next = ht->array[index];
 	ht->array[index] = hash_node;
-	printf("%s:%s\n", ht->array[index]->key, ht->array[index]->value);
 	return (1);
 }
 
