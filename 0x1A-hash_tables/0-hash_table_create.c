@@ -14,18 +14,18 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	hash_array = malloc(sizeof(hash_table_t));
 	if (!hash_array)
-		return(NULL);
+		return (NULL);
 	hash_array->size = size;
 	hash_array->array = malloc(sizeof(hash_node_t *) * size);
 	if (!hash_array->array)
 	{
 		free(hash_array);
-		return(NULL);
+		return (NULL);
 	}
 
 	for (i = 0; i < size; i++)
 		hash_array->array[i] = NULL;
 
-	return(hash_array);
+	return (hash_array);
 }
 
