@@ -10,7 +10,7 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int index; 
+	unsigned long int index;
 	hash_node_t *temp;
 
 	if (!ht || !(ht->array) || !(ht->size) || !key || *key == '\0')
