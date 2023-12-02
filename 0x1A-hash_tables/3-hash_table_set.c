@@ -2,11 +2,12 @@
 
 
 /**
- * make_hash_node - creates a new hash node
- * @key: key for the node
- * @value: for the node
+ * hash_table_set - sets a key to a value in the hash table
+ * @ht: hash table to add elemt to
+ * @key: key for the data
+ * @value: data to store
  *
- * Return: the new node, or NULL on failure
+ * Return: 1 if successful, 0 otherwise
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
