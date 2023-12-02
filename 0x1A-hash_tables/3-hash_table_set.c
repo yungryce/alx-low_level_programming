@@ -9,73 +9,46 @@
  * Return: the new node, or NULL on failure
  */
 
-hash_node_t *make_hash_node(const char *key, const char *value)
-{
-	hash_node_t *node;
-
-	node = malloc(sizeof(hash_node_t));
-	if (!node)
-		return (NULL);
-
-	node->key = strdup(key);
-	if (!node->key)
-	{
-		free(node);
-		return (NULL);
-	}
-	node->value = strdup(value);
-	if (!node->value)
-	{
-		free(node->key);
-		free(node);
-		return (NULL);
-	}
-	node->next = NULL;
-	return (node);
-}
-
-
-/**
- * hash_table_set - function that adds an element to the hash table.
- * @ht: hash table to add or update the key/value to
- * @key: key is the key. key can not be an empty string
- * @value: value is the value corresponding to the key
- *
- * Return: 1 if it succeeded, 0 otherwise
- */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index;
-	hash_node_t *hash_node = NULL;
-	hash_node_t *temp;
-	char *new_value;
+	hash_node_t *new;
+	char *value_copy;
+	unsigned long int index, i;
 
-	if (!ht || !ht->array || !key || *key == '\0' || !value)
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
+		return (0);
+
+	value_copy = strdup(value);
+	if (value_copy == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-
-	temp = ht->array[index];
-	while (temp)
+	for (i = index; ht->array[i]; i++)
 	{
-		if (strcmp(temp->key, key))
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
-			new_value = strdup(value);
-			if (!new_value)
-				return (0);
-			free(temp->value);
-			temp->value = new_value;
+			free(ht->array[i]->value);
+			ht->array[i]->value = value_copy;
 			return (1);
 		}
-		temp = temp->next;
 	}
-	hash_node = make_hash_node(key, value);
-	if (!hash_node)
-		return (0);
 
-	hash_node->next = ht->array[index];
-	ht->array[index] = hash_node;
+	new = malloc(sizeof(hash_node_t));
+	if (new == NULL)
+	{
+		free(value_copy);
+		return (0);
+	}
+	new->key = strdup(key);
+	if (new->key == NULL)
+	{
+		free(new);
+		return (0);
+	}
+	new->value = value_copy;
+	new->next = ht->array[index];
+	ht->array[index] = new;
+
 	return (1);
 }
 
