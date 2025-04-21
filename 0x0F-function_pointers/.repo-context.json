@@ -1,0 +1,63 @@
+{
+  "contextType": "educational",
+  "contextName": "Function Pointers in C",
+  "contextDescription": "Exploration of function pointers in C, including declaration, usage in callbacks, dynamic function selection, and advanced applications",
+  "mainLanguage": "c",
+  "topics": [
+    "function-pointers",
+    "callbacks",
+    "indirect-function-calls",
+    "dynamic-dispatch",
+    "function-arrays",
+    "runtime-selection",
+    "opcodes"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Declare and use function pointers in C",
+    "Implement callback patterns for flexible code",
+    "Create functions that accept function pointers as parameters",
+    "Build arrays of function pointers for related operations",
+    "Select functions dynamically at runtime",
+    "Apply function pointers in practical applications",
+    "Understand memory aspects of function pointers"
+  ],
+  "prerequisites": [
+    "Functions in C",
+    "Pointers and memory concepts",
+    "Function prototypes",
+    "Type definitions",
+    "Parameter passing"
+  ],
+  "associatedProjects": {
+    "previous": "0x0E-structures_typedef",
+    "next": "0x10-variadic_functions",
+    "related": ["0x12-singly_linked_lists", "0x17-doubly_linked_lists"]
+  },
+  "resources": [
+    {
+      "name": "Function Pointers in C",
+      "url": "https://www.geeksforgeeks.org/function-pointer-in-c/"
+    },
+    {
+      "name": "Callbacks in C",
+      "url": "https://www.learn-c.org/en/Function_Pointers"
+    }
+  ],
+  "conceptsCovered": [
+    "function pointer syntax",
+    "callback functions",
+    "function pointer arrays",
+    "function pointer typedefs",
+    "function address retrieval",
+    "indirect function calls",
+    "dynamic function dispatch",
+    "opcode examination"
+  ],
+  "advancedConcepts": [
+    "void pointers with function pointers",
+    "function signature matching",
+    "type safety with function pointers",
+    "machine code interpretation"
+  ]
+}

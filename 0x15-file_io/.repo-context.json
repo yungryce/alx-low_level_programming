@@ -1,0 +1,84 @@
+{
+  "contextType": "educational",
+  "contextName": "File I/O in C",
+  "contextDescription": "Implementation of file input/output operations in C using system calls, covering file creation, reading, writing, and ELF header parsing",
+  "mainLanguage": "c",
+  "topics": [
+    "file-io",
+    "system-calls",
+    "file-descriptors",
+    "file-permissions",
+    "error-handling",
+    "buffer-management",
+    "binary-files",
+    "elf-headers",
+    "resource-management"
+  ],
+  "skillLevel": "intermediate-advanced",
+  "learningObjectives": [
+    "Implement file operations using system calls (open, close, read, write)",
+    "Manage file descriptors properly throughout program execution",
+    "Apply appropriate error handling for all I/O operations",
+    "Create files with specific permissions and content",
+    "Append data to existing files",
+    "Copy content between files using buffers",
+    "Parse binary file headers (ELF format)",
+    "Ensure proper resource cleanup after file operations",
+    "Handle different file types and error conditions"
+  ],
+  "prerequisites": [
+    "C programming fundamentals",
+    "Function implementation",
+    "Error handling techniques",
+    "Memory management",
+    "Basic understanding of file systems"
+  ],
+  "associatedProjects": {
+    "previous": "0x14-bit_manipulation",
+    "next": "0x17-doubly_linked_lists",
+    "related": ["0x16-simple_shell", "0x1C-makefiles"]
+  },
+  "resources": [
+    {
+      "name": "File I/O in C",
+      "url": "https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/"
+    },
+    {
+      "name": "ELF File Format",
+      "url": "https://en.wikipedia.org/wiki/Executable_and_Linkable_Format"
+    }
+  ],
+  "conceptsCovered": [
+    "file descriptors",
+    "file opening modes",
+    "permission flags",
+    "reading from files",
+    "writing to files",
+    "appending to files",
+    "file descriptor validation",
+    "buffer-based file operations",
+    "error code handling",
+    "ELF format structure",
+    "file metadata"
+  ],
+  "systemCalls": [
+    "open()",
+    "close()",
+    "read()",
+    "write()",
+    "dprintf()"
+  ],
+  "filePermissions": [
+    "S_IRUSR",
+    "S_IWUSR",
+    "S_IRGRP",
+    "S_IWGRP",
+    "S_IROTH"
+  ],
+  "errorHandling": [
+    "errno checking",
+    "exit status codes",
+    "error message printing",
+    "resource cleanup on error"
+  ]
+}

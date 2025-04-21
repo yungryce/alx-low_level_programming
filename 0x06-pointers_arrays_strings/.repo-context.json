@@ -1,0 +1,74 @@
+{
+  "contextType": "educational",
+  "contextName": "More Pointers, Arrays, and Strings in C",
+  "contextDescription": "Advanced exploration of pointers, arrays, and string manipulation in C, including implementation of standard library functions, encoding techniques, and complex buffer operations",
+  "mainLanguage": "c",
+  "topics": [
+    "advanced-pointers",
+    "string-functions",
+    "buffer-operations",
+    "memory-manipulation",
+    "array-transformations",
+    "string-encoding",
+    "custom-algorithms",
+    "standard-library-implementation"
+  ],
+  "skillLevel": "intermediate-advanced",
+  "learningObjectives": [
+    "Implement custom versions of standard C string functions",
+    "Perform advanced string manipulations with buffer constraints",
+    "Create encoding and transformation algorithms for strings",
+    "Apply in-place array modifications efficiently",
+    "Handle boundary conditions in memory operations",
+    "Understand and implement string comparison algorithms",
+    "Develop string case conversion functions",
+    "Create functions for large number operations with strings"
+  ],
+  "prerequisites": [
+    "Basic pointer operations",
+    "String and array fundamentals",
+    "Memory concepts in C",
+    "Function implementation techniques",
+    "Loop and control flow mastery"
+  ],
+  "associatedProjects": {
+    "previous": "0x05-pointers_arrays_strings",
+    "next": "0x07-pointers_arrays_strings",
+    "related": ["0x08-recursion", "0x0B-malloc_free"]
+  },
+  "resources": [
+    {
+      "name": "C String Library Functions",
+      "url": "https://www.tutorialspoint.com/c_standard_library/string_h.htm"
+    },
+    {
+      "name": "Advanced Pointer Techniques",
+      "url": "https://www.geeksforgeeks.org/advanced-pointer-concepts-in-c/"
+    }
+  ],
+  "conceptsCovered": [
+    "string concatenation",
+    "string copying with limits",
+    "string comparison",
+    "array reversal",
+    "case conversion",
+    "title capitalization",
+    "text encoding",
+    "character substitution",
+    "buffer printing",
+    "large number addition",
+    "pointer arithmetic"
+  ],
+  "stringFunctions": [
+    "strcat equivalent",
+    "strncat equivalent",
+    "strncpy equivalent",
+    "strcmp equivalent",
+    "custom transformations"
+  ],
+  "encodingTechniques": [
+    "leet encoding (1337)",
+    "ROT13 cipher",
+    "character transformation"
+  ]
+}

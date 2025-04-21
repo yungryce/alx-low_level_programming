@@ -1,0 +1,74 @@
+{
+  "contextType": "educational",
+  "contextName": "Recursion in C",
+  "contextDescription": "Introduction to recursive function design and implementation in C, covering string operations, mathematical calculations, and advanced algorithms using recursive approaches",
+  "mainLanguage": "c",
+  "topics": [
+    "recursion",
+    "recursive-functions",
+    "base-cases",
+    "call-stack",
+    "recursive-string-operations",
+    "mathematical-recursion",
+    "recursive-algorithms",
+    "head-recursion",
+    "tail-recursion"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Design and implement recursive functions in C",
+    "Identify appropriate base cases for recursion termination",
+    "Apply recursion to string manipulation problems",
+    "Implement mathematical operations using recursion",
+    "Create recursive algorithms for complex problems",
+    "Analyze recursive call patterns and stack usage",
+    "Compare recursive and iterative approaches",
+    "Implement advanced algorithms like wildcard matching recursively"
+  ],
+  "prerequisites": [
+    "Function implementation in C",
+    "Control flow and conditions",
+    "Basic algorithm understanding",
+    "String and array manipulation",
+    "Memory concepts and call stack"
+  ],
+  "associatedProjects": {
+    "previous": "0x07-pointers_arrays_strings",
+    "next": "0x09-static_libraries",
+    "related": ["0x0F-function_pointers", "0x12-singly_linked_lists"]
+  },
+  "resources": [
+    {
+      "name": "Recursion in C",
+      "url": "https://www.geeksforgeeks.org/recursion-in-c/"
+    },
+    {
+      "name": "Recursive Algorithms",
+      "url": "https://www.tutorialspoint.com/data_structures_algorithms/recursive_algorithms.htm"
+    }
+  ],
+  "conceptsCovered": [
+    "recursion fundamentals",
+    "base case identification",
+    "call stack management",
+    "recursive string operations",
+    "factorial calculation",
+    "power functions",
+    "square root algorithms",
+    "prime number checking",
+    "palindrome verification",
+    "wildcard pattern matching"
+  ],
+  "recursionTypes": [
+    "direct recursion",
+    "indirect recursion",
+    "head recursion",
+    "tail recursion"
+  ],
+  "mathematicalConcepts": [
+    "factorial",
+    "exponentiation",
+    "square root",
+    "primality testing"
+  ]
+}

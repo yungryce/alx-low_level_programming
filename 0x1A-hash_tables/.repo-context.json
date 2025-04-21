@@ -1,0 +1,79 @@
+{
+  "contextType": "educational",
+  "contextName": "Hash Tables in C",
+  "contextDescription": "Implementation of hash tables from scratch in C, covering hash functions, collision handling, and operations on key-value pairs",
+  "mainLanguage": "c",
+  "topics": [
+    "hash-tables",
+    "data-structures",
+    "hash-functions",
+    "collision-handling",
+    "key-value-pairs",
+    "linked-lists",
+    "memory-management",
+    "algorithm-complexity"
+  ],
+  "skillLevel": "intermediate-advanced",
+  "learningObjectives": [
+    "Implement a hash table data structure from scratch",
+    "Design and evaluate hash functions",
+    "Handle collisions using chaining with linked lists",
+    "Create basic hash table operations (create, set, get, delete)",
+    "Analyze time and space complexity of hash table operations",
+    "Manage memory for complex data structures",
+    "Implement a sorted hash table with ordered traversal",
+    "Apply hash tables to solve common programming problems"
+  ],
+  "prerequisites": [
+    "Dynamic memory allocation",
+    "Linked list implementation",
+    "Pointer manipulation",
+    "Data structure concepts",
+    "Algorithm analysis basics",
+    "C structures and typedefs"
+  ],
+  "associatedProjects": {
+    "previous": "0x19-stacks_queues_lifo_fifo",
+    "next": "0x1B-sorting_algorithms",
+    "related": ["0x17-doubly_linked_lists", "0x1C-makefiles"]
+  },
+  "resources": [
+    {
+      "name": "Hash Table Implementation in C",
+      "url": "https://www.geeksforgeeks.org/implementing-hash-table-in-c-with-separate-chaining/"
+    },
+    {
+      "name": "DJB2 Hash Algorithm",
+      "url": "http://www.cse.yorku.ca/~oz/hash.html"
+    }
+  ],
+  "conceptsCovered": [
+    "hash function algorithms",
+    "collision resolution techniques",
+    "separate chaining",
+    "key-value storage",
+    "dynamic array management",
+    "hash table operations",
+    "djb2 algorithm",
+    "ordered hash tables",
+    "memory cleanup strategies"
+  ],
+  "dataStructures": [
+    "hash_table_t",
+    "hash_node_t",
+    "shash_table_t",
+    "shash_node_t"
+  ],
+  "algorithmComplexity": {
+    "average": {
+      "lookup": "O(1)",
+      "insertion": "O(1)",
+      "deletion": "O(1)"
+    },
+    "worst": {
+      "lookup": "O(n)",
+      "insertion": "O(n)",
+      "deletion": "O(n)"
+    }
+  }
+}

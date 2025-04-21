@@ -1,104 +1,193 @@
-# README
+# Command-Line Arguments in C: `argc` and `argv`
 
-## Command-Line Arguments: `argc` and `argv`
+This directory contains exercises that explore the use of command-line arguments in C programs through the `argc` (argument count) and `argv` (argument vector) parameters of the main function.
 
-This repository contains a demonstration of using command-line arguments in a C/C++ program with the help of `argc` and `argv` parameters.
+## Learning Objectives
 
-### Overview
+By completing the exercises in this directory, you will be able to:
+- Understand how to access command-line arguments in C programs
+- Use the `argc` parameter to determine the number of arguments passed
+- Access individual arguments using the `argv` array of strings
+- Convert string arguments to integers using `atoi()`
+- Implement proper error handling for command-line inputs
+- Create programs that respond differently based on argument quantity and content
+- Apply the unused variable attribute when necessary
 
-When writing a command-line program, you often need to provide inputs or options to control its behavior. Command-line arguments allow users to pass such inputs to a program when launching it from a terminal or command prompt.
+## Command-Line Arguments Overview
 
-In C/C++, the main function can accept two parameters: `argc` and `argv`. Here's a brief explanation of each:
+When writing a command-line program, you often need to provide inputs or options to control its behavior. Command-line arguments allow users to pass such inputs to a program when launching it from a terminal.
 
-- `argc` (argument count): It represents the number of command-line arguments passed to the program, including the name of the program itself.
-- `argv` (argument vector): It is an array of strings that holds the actual command-line arguments. The first element (`argv[0]`) is the name of the program, and the subsequent elements (`argv[1]`, `argv[2]`, and so on) represent the additional arguments passed.
+In C, the main function can accept two parameters:
+- `argc` (argument count): The number of command-line arguments passed to the program, including the program name itself
+- `argv` (argument vector): An array of strings holding the actual arguments, with `argv[0]` being the program name
 
-### Usage
+## Project Files
 
-To use command-line arguments in your program, you can follow these steps:
+This directory includes the following programs:
 
-1. Declare the `main` function with the `argc` and `argv` parameters:
+- **[0-whatsmyname.c](./0-whatsmyname.c)**: Prints the program name, demonstrating `argv[0]` usage
+- **[1-args.c](./1-args.c)**: Prints the number of arguments passed, showing how to use `argc`
+- **[2-args.c](./2-args.c)**: Prints all arguments received, one per line, showing array traversal
+- **[3-mul.c](./3-mul.c)**: Multiplies two numbers provided as arguments, showing argument conversion
+- **[4-add.c](./4-add.c)**: Adds positive numbers provided as arguments, demonstrating validation
+- **[100-change.c](./100-change.c)**: Calculates minimum coins needed for change, showing complex argument processing
 
-```c
-int main(int argc, char* argv[]) {
-    // Your code here
-    return 0;
-}
-```
-3 / 3
+## Usage Examples
 
-markdown
+### Printing the Program Name
 
-# README
-
-## Command-Line Arguments: `argc` and `argv`
-
-This repository contains a demonstration of using command-line arguments in a C/C++ program with the help of `argc` and `argv` parameters.
-
-### Overview
-
-When writing a command-line program, you often need to provide inputs or options to control its behavior. Command-line arguments allow users to pass such inputs to a program when launching it from a terminal or command prompt.
-
-In C/C++, the main function can accept two parameters: `argc` and `argv`. Here's a brief explanation of each:
-
-- `argc` (argument count): It represents the number of command-line arguments passed to the program, including the name of the program itself.
-- `argv` (argument vector): It is an array of strings that holds the actual command-line arguments. The first element (`argv[0]`) is the name of the program, and the subsequent elements (`argv[1]`, `argv[2]`, and so on) represent the additional arguments passed.
-
-### Usage
-
-To use command-line arguments in your program, you can follow these steps:
-
-1. Declare the `main` function with the `argc` and `argv` parameters:
-
-```c
-int main(int argc, char* argv[]) {
-    // Your code here
-    return 0;
-}
+```bash
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-whatsmyname.c -o mynameis
+$ ./mynameis
+./mynameis
+$ mv mynameis mynewnameis
+$ ./mynewnameis
+./mynewnameis
 ```
 
-2.  Access the command-line arguments inside the main function. You can use the argc and argv parameters to retrieve and process the arguments as needed.
+### Counting Arguments
+
+```bash
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-args.c -o nargs
+$ ./nargs 
+0
+$ ./nargs hello
+1
+$ ./nargs "hello, world" welcome to ALX
+3
+```
+
+### Listing All Arguments
+
+```bash
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-args.c -o args
+$ ./args 
+./args
+$ ./args You can do anything, but not everything.
+./args
+You
+can
+do
+anything,
+but
+not
+everything.
+```
+
+### Multiplying Numbers
+
+```bash
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-mul.c -o mul
+$ ./mul 2 3
+6
+$ ./mul 2 -3
+-6
+$ ./mul 2
+Error
+$ ./mul
+Error
+```
+
+### Adding Positive Numbers
+
+```bash
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-add.c -o add
+$ ./add 1 1
+2
+$ ./add 1 10 100 1000
+1111
+$ ./add 1 2 3 e 4 5
+Error
+$ ./add
+0
+```
+
+## Implementation Techniques
+
+### Accessing Arguments
 
 ```c
-int main(int argc, char* argv[]) {
-    // Accessing the program name
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    /* Program name is always at argv[0] */
     printf("Program name: %s\n", argv[0]);
-
-    // Accessing additional arguments
-    for (int i = 1; i < argc; i++) {
+    
+    /* Loop through additional arguments */
+    for (int i = 1; i < argc; i++)
+    {
         printf("Argument %d: %s\n", i, argv[i]);
     }
-
-    return 0;
+    
+    return (0);
 }
 ```
 
-3.  Compile and run the program from the command line, passing the desired arguments:
-```shell
-$ gcc program.c -o program
-$ ./program arg1 arg2 arg3
+### Converting String Arguments to Integers
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+    if (argc != 3)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    
+    /* Convert string arguments to integers */
+    int num1 = atoi(argv[1]);
+    int num2 = atoi(argv[2]);
+    
+    printf("%d\n", num1 * num2);
+    
+    return (0);
+}
 ```
 
-##  Example
+### Handling Unused Variables
 
-Inside this repository, you'll find an example program named command_line_args.c. It demonstrates how to access and process command-line arguments using argc and argv. To run the example program, follow these steps:
+When you need to declare a parameter in the main function but don't use it:
 
-1.  Compile the program:
-
-```shell
-$ gcc command_line_args.c -o command_line_args
+```c
+int main(int argc __attribute__((unused)), char *argv[])
+{
+    printf("Program name: %s\n", argv[0]);
+    return (0);
+}
 ```
 
-2.  Execute the program with some arguments:
+### Error Handling
 
-```shell
-$ ./command_line_args arg1 arg2 arg3
+When working with command-line arguments, proper error handling is essential:
+
+- Check if the expected number of arguments was provided
+- Validate argument types (e.g., ensure a string can be converted to a number)
+- Provide informative error messages when requirements aren't met
+
+For example:
+
+```c
+if (argc != 3)
+{
+    printf("Error\n");
+    return (1);
+}
 ```
 
-The program will display the program name and the provided arguments.
+## Compilation
 
-Feel free to explore and modify the example program to understand how command-line arguments work in C/C++.
+All programs in this directory should be compiled using:
 
-##  Conclusion
+```bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 filename.c -o program_name
+```
 
-Command-line arguments (argc and argv) provide a convenient way to pass inputs and options to a command-line program. Understanding how to use these parameters allows you to create flexible programs that can be customized based on user requirements.
+## Additional Resources
+
+- [C Command Line Arguments (GeeksforGeeks)](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)
+- [Using Argument Count and Vector (Programiz)](https://www.programiz.com/c-programming/c-command-line-arguments)
+- [Converting Strings to Numbers in C](https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm)

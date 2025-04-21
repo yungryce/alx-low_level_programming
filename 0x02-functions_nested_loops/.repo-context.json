@@ -1,0 +1,73 @@
+{
+  "contextType": "educational",
+  "contextName": "Functions and Nested Loops in C",
+  "contextDescription": "Introduction to function creation, nested loops, header files, and modular programming concepts in C",
+  "mainLanguage": "c",
+  "topics": [
+    "functions",
+    "nested-loops",
+    "header-files",
+    "prototypes",
+    "modularity",
+    "code-organization",
+    "function-parameters",
+    "return-values",
+    "recursion"
+  ],
+  "skillLevel": "beginner-intermediate",
+  "learningObjectives": [
+    "Create and use custom functions in C",
+    "Develop and use header files with function prototypes",
+    "Implement nested loops for complex repetitive operations",
+    "Design modular code with appropriate separation of concerns",
+    "Apply function parameters and return values effectively",
+    "Implement mathematical operations using functions",
+    "Create custom versions of standard library functions",
+    "Build recursive functions for sequence generation"
+  ],
+  "prerequisites": [
+    "C basics (variables, operators)",
+    "Simple control flow (if/else)",
+    "Basic loops (while, for)",
+    "Understanding of the compilation process"
+  ],
+  "associatedProjects": {
+    "previous": "0x01-variables_if_else_while",
+    "next": "0x03-debugging",
+    "related": ["0x04-more_functions_nested_loops"]
+  },
+  "resources": [
+    {
+      "name": "Functions in C",
+      "url": "https://www.tutorialspoint.com/cprogramming/c_functions.htm"
+    },
+    {
+      "name": "Nested Loops",
+      "url": "https://www.geeksforgeeks.org/nested-loops-in-c-with-examples/"
+    },
+    {
+      "name": "Header Files in C",
+      "url": "https://www.tutorialspoint.com/cprogramming/c_header_files.htm"
+    }
+  ],
+  "conceptsCovered": [
+    "function declaration",
+    "function definition",
+    "header files",
+    "function prototypes",
+    "nested loops",
+    "parameter passing",
+    "return values",
+    "include guards",
+    "modular programming",
+    "loop control structures",
+    "fibonacci sequences",
+    "mathematical operations"
+  ],
+  "compilationFlags": [
+    "-Wall",
+    "-Werror",
+    "-Wextra",
+    "-pedantic"
+  ]
+}

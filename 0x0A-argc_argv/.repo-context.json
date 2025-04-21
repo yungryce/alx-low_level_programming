@@ -1,0 +1,53 @@
+{
+  "contextType": "educational",
+  "contextName": "Command Line Arguments in C",
+  "contextDescription": "Introduction to handling command-line arguments in C programs using argc and argv parameters to main",
+  "mainLanguage": "c",
+  "topics": [
+    "command-line-arguments",
+    "c-programming",
+    "parameter-handling",
+    "string-conversion",
+    "input-validation",
+    "argc-argv"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Access and manipulate command line arguments in C programs",
+    "Understand the structure and purpose of argc and argv",
+    "Convert string arguments to appropriate data types",
+    "Implement input validation for command line parameters",
+    "Create programs that respond to different command line inputs",
+    "Handle error cases when required arguments are missing"
+  ],
+  "prerequisites": [
+    "Basic C programming knowledge",
+    "Understanding of pointers and arrays",
+    "String manipulation in C",
+    "Memory management concepts"
+  ],
+  "associatedProjects": {
+    "previous": "0x09-static_libraries",
+    "next": "0x0B-malloc_free",
+    "related": ["0x0F-function_pointers"]
+  },
+  "resources": [
+    {
+      "name": "Command Line Arguments in C",
+      "url": "https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm"
+    },
+    {
+      "name": "Converting Strings to Numbers",
+      "url": "https://www.geeksforgeeks.org/write-your-own-atoi/"
+    }
+  ],
+  "conceptsCovered": [
+    "argc parameter",
+    "argv array",
+    "program name retrieval",
+    "string to integer conversion",
+    "argument counting",
+    "error handling for missing arguments",
+    "looping through multiple arguments"
+  ]
+}

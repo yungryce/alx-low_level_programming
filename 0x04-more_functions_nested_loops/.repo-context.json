@@ -1,0 +1,73 @@
+{
+  "contextType": "educational",
+  "contextName": "More Functions and Nested Loops in C",
+  "contextDescription": "Advanced exploration of functions and nested loops in C, focusing on character and number operations, pattern generation, and algorithmic problem-solving",
+  "mainLanguage": "c",
+  "topics": [
+    "advanced-functions",
+    "nested-loops",
+    "character-classification",
+    "number-operations",
+    "pattern-printing",
+    "modular-design",
+    "algorithm-implementation",
+    "code-reuse"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Implement character classification functions",
+    "Create mathematical operation functions",
+    "Generate patterns and shapes using nested loops",
+    "Design modular and reusable code components",
+    "Solve algorithmic problems with efficient approaches",
+    "Apply nested loops for complex output patterns",
+    "Implement the Fizz-Buzz algorithm",
+    "Find prime factors using mathematical concepts"
+  ],
+  "prerequisites": [
+    "Basic function implementation",
+    "Simple loops",
+    "Variable manipulation",
+    "Control flow statements",
+    "C compilation process understanding"
+  ],
+  "associatedProjects": {
+    "previous": "0x03-debugging",
+    "next": "0x05-pointers_arrays_strings",
+    "related": ["0x02-functions_nested_loops"]
+  },
+  "resources": [
+    {
+      "name": "Advanced Functions in C",
+      "url": "https://www.geeksforgeeks.org/c-functions/"
+    },
+    {
+      "name": "Pattern Printing in C",
+      "url": "https://www.geeksforgeeks.org/programs-printing-pyramid-patterns-c/"
+    }
+  ],
+  "conceptsCovered": [
+    "function design and implementation",
+    "character operations",
+    "nested loop patterns",
+    "conditional printing",
+    "terminal-based drawing",
+    "mathematical algorithms",
+    "prime factorization",
+    "integer manipulation",
+    "geometric shape generation",
+    "fizz-buzz algorithm"
+  ],
+  "patternTypes": [
+    "lines",
+    "diagonals",
+    "squares",
+    "triangles"
+  ],
+  "compilationFlags": [
+    "-Wall",
+    "-Werror",
+    "-Wextra",
+    "-pedantic"
+  ]
+}

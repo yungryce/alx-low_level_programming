@@ -1,0 +1,75 @@
+{
+  "contextType": "educational",
+  "contextName": "Pointers, Arrays, and Strings in C",
+  "contextDescription": "Introduction to pointers, arrays, and string manipulation in C, covering memory concepts, address manipulation, and data structure operations",
+  "mainLanguage": "c",
+  "topics": [
+    "pointers",
+    "arrays",
+    "strings",
+    "memory-management",
+    "pass-by-reference",
+    "pointer-arithmetic",
+    "string-manipulation",
+    "memory-addresses",
+    "data-structures"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Understand and use pointers to manipulate memory",
+    "Implement pass-by-reference using pointers",
+    "Create functions for string manipulation and traversal",
+    "Apply array operations using both indexing and pointers",
+    "Implement common string algorithms like reverse and length",
+    "Convert string representations to numeric values",
+    "Manipulate memory directly through addresses",
+    "Generate random character sequences for passwords"
+  ],
+  "prerequisites": [
+    "C basics (variables, operators)",
+    "Functions and parameters",
+    "Control flow and loops",
+    "Basic memory concepts"
+  ],
+  "associatedProjects": {
+    "previous": "0x04-more_functions_nested_loops",
+    "next": "0x06-pointers_arrays_strings",
+    "related": ["0x07-pointers_arrays_strings", "0x08-recursion"]
+  },
+  "resources": [
+    {
+      "name": "Pointers in C",
+      "url": "https://www.tutorialspoint.com/cprogramming/c_pointers.htm"
+    },
+    {
+      "name": "Arrays and Strings in C",
+      "url": "https://www.learn-c.org/en/Arrays_and_Pointers"
+    }
+  ],
+  "conceptsCovered": [
+    "pointer declaration",
+    "pointer dereferencing",
+    "memory addresses",
+    "pass by reference",
+    "array traversal",
+    "string termination",
+    "character manipulation",
+    "buffer management",
+    "string conversion",
+    "value swapping",
+    "random generation"
+  ],
+  "memoryOperations": [
+    "address retrieval",
+    "value access through pointers",
+    "memory content modification",
+    "pointer arithmetic",
+    "array indexing"
+  ],
+  "stringFunctions": [
+    "strlen equivalent",
+    "puts equivalent",
+    "strcpy equivalent",
+    "atoi equivalent"
+  ]
+}

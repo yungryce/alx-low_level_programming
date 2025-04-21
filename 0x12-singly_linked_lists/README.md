@@ -1,108 +1,283 @@
-# Data Structures and Linked List in C
+# Singly Linked Lists
 
-## Introduction
+This directory contains implementations of singly linked lists in C, focusing on the fundamental concepts of node-based data structures, dynamic memory allocation, and pointer manipulation.
 
-Welcome to the README for the concept of Data Structures and the implementation of a Linked List using C programming. In this document, we'll explore the fundamental concepts of data structures and how a Linked List works as a popular example of a data structure. We'll also provide a basic implementation of a singly linked list in C to help you understand the concept better.
+## Learning Objectives
 
-## What are Data Structures?
+By completing the exercises in this directory, you will be able to:
+- Understand the concept and structure of linked lists
+- Implement basic linked list operations (creation, traversal, insertion, deletion)
+- Apply proper memory management techniques for dynamic data structures
+- Use pointers to navigate and manipulate linked data
+- Compare linked lists with arrays and understand their respective advantages
+- Design functions that operate on linked data structures
+- Apply proper coding style and documentation practices
+- Create reusable and modular linked list implementations
 
-Data structures are fundamental constructs used in computer science to organize and store data in a way that facilitates efficient operations. They are essential for managing and manipulating data effectively, and various data structures have different strengths and weaknesses depending on the requirements of a specific problem.
+## What is a Singly Linked List?
 
-Data structures provide a logical representation of data, and they can be classified into two main categories:
+A singly linked list is a linear data structure consisting of a sequence of elements called nodes. Each node contains two parts:
+1. **Data**: The actual value or information stored in the node
+2. **Next Pointer**: A reference to the next node in the sequence
 
-1. **Primitive Data Structures:** These are the basic data types provided by the programming language, such as integers, floats, characters, and arrays. They are used to store individual elements.
+The list is accessed through a pointer to the first node, called the "head." The last node points to NULL, indicating the end of the list.
 
-2. **Abstract Data Types (ADTs):** ADTs are user-defined data structures that encapsulate data and the operations performed on that data. ADTs hide the implementation details, allowing the user to interact with the data using well-defined interfaces. Examples of ADTs include Linked Lists, Stacks, Queues, Trees, and Graphs.
-
-## Linked List
-
-A Linked List is a dynamic data structure that falls under the category of Abstract Data Types. It consists of a sequence of elements, called nodes, where each node points to the next node in the sequence.
-
-### Advantages of Linked Lists
-
-- **Dynamic Size:** Linked lists can grow or shrink in size during runtime, unlike arrays with fixed sizes.
-
-- **Easy Insertion and Deletion:** Inserting or deleting elements in a linked list can be done efficiently by changing the pointers, whereas it might require shifting elements in an array.
-
-- **Memory Utilization:** Linked lists use memory efficiently since they allocate memory for each node only when needed.
-
-### Types of Linked Lists
-
-1. **Singly Linked List:** Each node in a singly linked list contains data and a pointer/reference to the next node. The last node points to NULL, indicating the end of the list.
-
-2. **Doubly Linked List:** Each node in a doubly linked list contains data, a pointer to the next node, and a pointer to the previous node. The first node's previous pointer and the last node's next pointer point to NULL.
-
-3. **Circular Linked List:** In a circular linked list, the last node's next pointer points back to the first node, forming a loop.
-
-### Basic Operations on a Singly Linked List
-
-1. **Insertion:** Add a new node to the linked list.
-
-2. **Deletion:** Remove a node from the linked list.
-
-3. **Traversal:** Visit each node in the linked list to perform an operation.
-
-4. **Searching:** Find a specific element in the linked list.
-
-## Implementation of a Singly Linked List in C
-
-Below is a simple C program demonstrating the implementation of a singly linked list. Please note that this is a basic example and may not handle all edge cases.
+## Basic Structure
 
 ```c
-#include <stdio.h>
-#include <stdlib.h>
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+```
 
-// Node structure for singly linked list
-struct Node {
-    int data;
-    struct Node* next;
-};
+## Project Files
 
-// Function to insert a new node at the beginning of the list
-void insertAtBeginning(struct Node** head, int data) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    newNode->data = data;
-    newNode->next = *head;
-    *head = newNode;
-}
+- **[0-print_list.c](./0-print_list.c)**: Prints all elements of a list and returns the number of nodes
+- **[1-list_len.c](./1-list_len.c)**: Returns the number of elements in a linked list
+- **[2-add_node.c](./2-add_node.c)**: Adds a new node at the beginning of a list
+- **[3-add_node_end.c](./3-add_node_end.c)**: Adds a new node at the end of a list
+- **[4-free_list.c](./4-free_list.c)**: Frees all nodes of a list
+- **[100-first.c](./100-first.c)**: Prints a message before the main function is executed
+- **[101-hello_holberton.asm](./101-hello_holberton.asm)**: Assembly program that prints a message
 
-// Function to display the linked list
-void displayList(struct Node* head) {
-    struct Node* current = head;
-    while (current != NULL) {
-        printf("%d -> ", current->data);
-        current = current->next;
+## Core Operations
+
+### Traversing a List
+
+```c
+/**
+ * print_list - Prints all elements of a list_t list
+ * @h: Pointer to the head of the list
+ *
+ * Return: The number of nodes
+ */
+size_t print_list(const list_t *h)
+{
+    size_t count = 0;
+
+    while (h != NULL)
+    {
+        if (h->str == NULL)
+            printf("[0] (nil)\n");
+        else
+            printf("[%u] %s\n", h->len, h->str);
+        
+        h = h->next;
+        count++;
     }
-    printf("NULL\n");
-}
 
-// Function to free the memory allocated to the linked list
-void freeList(struct Node* head) {
-    struct Node* current = head;
-    struct Node* next;
-    while (current != NULL) {
-        next = current->next;
-        free(current);
-        current = next;
-    }
-}
-
-int main() {
-    struct Node* head = NULL;
-
-    insertAtBeginning(&head, 3);
-    insertAtBeginning(&head, 2);
-    insertAtBeginning(&head, 1);
-
-    printf("Linked List: ");
-    displayList(head);
-
-    freeList(head);
-
-    return 0;
+    return (count);
 }
 ```
 
-## Conclusion
+### Creating a New Node
 
-Understanding data structures is crucial for any programmer or computer scientist, as they form the backbone of various algorithms and applications. Linked lists are one of the essential data structures, and we hope this README has given you a solid introduction to the concept of data structures and a basic understanding of how a singly linked list is implemented using C programming. Remember to explore more complex implementations and operations to become proficient in utilizing data structures effectively in your programs. Happy coding!
+```c
+/**
+ * create_node - Creates a new list_t node
+ * @str: String to be duplicated and stored in the new node
+ *
+ * Return: Address of the new node, or NULL if it failed
+ */
+list_t *create_node(const char *str)
+{
+    list_t *new_node;
+    unsigned int len = 0;
+
+    /* Calculate string length */
+    while (str && str[len])
+        len++;
+
+    /* Allocate memory for the new node */
+    new_node = malloc(sizeof(list_t));
+    if (new_node == NULL)
+        return (NULL);
+
+    /* Duplicate string */
+    new_node->str = strdup(str);
+    if (new_node->str == NULL)
+    {
+        free(new_node);
+        return (NULL);
+    }
+
+    /* Set the other fields */
+    new_node->len = len;
+    new_node->next = NULL;
+
+    return (new_node);
+}
+```
+
+### Adding a Node at the Beginning
+
+```c
+/**
+ * add_node - Adds a new node at the beginning of a list_t list
+ * @head: Pointer to a pointer to the head of the list
+ * @str: String to be duplicated and stored in the new node
+ *
+ * Return: Address of the new element, or NULL if it failed
+ */
+list_t *add_node(list_t **head, const char *str)
+{
+    list_t *new_node;
+
+    if (head == NULL)
+        return (NULL);
+
+    /* Create a new node */
+    new_node = create_node(str);
+    if (new_node == NULL)
+        return (NULL);
+
+    /* Insert at the beginning */
+    new_node->next = *head;
+    *head = new_node;
+
+    return (new_node);
+}
+```
+
+### Adding a Node at the End
+
+```c
+/**
+ * add_node_end - Adds a new node at the end of a list_t list
+ * @head: Pointer to a pointer to the head of the list
+ * @str: String to be duplicated and stored in the new node
+ *
+ * Return: Address of the new element, or NULL if it failed
+ */
+list_t *add_node_end(list_t **head, const char *str)
+{
+    list_t *new_node, *temp;
+
+    if (head == NULL)
+        return (NULL);
+
+    /* Create a new node */
+    new_node = create_node(str);
+    if (new_node == NULL)
+        return (NULL);
+
+    /* If the list is empty, new node becomes the head */
+    if (*head == NULL)
+    {
+        *head = new_node;
+        return (new_node);
+    }
+
+    /* Traverse to the last node */
+    temp = *head;
+    while (temp->next != NULL)
+        temp = temp->next;
+
+    /* Add new node at the end */
+    temp->next = new_node;
+
+    return (new_node);
+}
+```
+
+### Freeing a List
+
+```c
+/**
+ * free_list - Frees a list_t list
+ * @head: Pointer to the head of the list
+ */
+void free_list(list_t *head)
+{
+    list_t *current, *next_node;
+
+    current = head;
+    while (current != NULL)
+    {
+        next_node = current->next;  /* Save next node before freeing current */
+        free(current->str);         /* Free the string */
+        free(current);              /* Free the node */
+        current = next_node;        /* Move to the next node */
+    }
+}
+```
+
+## Linked Lists vs Arrays
+
+| Feature | Linked Lists | Arrays |
+|---------|--------------|--------|
+| Memory Allocation | Dynamic (Runtime) | Static (Compile-time) for fixed arrays |
+| Memory Layout | Non-contiguous | Contiguous |
+| Size Flexibility | Can grow or shrink | Fixed size (unless using dynamic arrays) |
+| Element Access | O(n) | O(1) |
+| Insertion/Deletion | O(1) if position is known | O(n) for shifting elements |
+| Memory Efficiency | Lower (extra pointer storage) | Higher (just data) |
+
+## Function Attributes - Constructor and Destructor
+
+The project also explores the use of GCC's constructor and destructor attributes:
+
+```c
+/**
+ * before_main - Function executed before main
+ *
+ * Description: The constructor attribute causes the function to be called
+ * automatically before main() is executed.
+ */
+void __attribute__((constructor)) before_main(void)
+{
+    printf("You're beat! and yet, you must allow,\n");
+    printf("I bore my house upon my back!\n");
+}
+```
+
+## Memory Management
+
+Proper memory management is crucial when working with linked lists:
+
+1. **Allocation**: Use `malloc()` to allocate memory for each node
+2. **String Duplication**: Use `strdup()` to copy strings
+3. **Deallocation**: Use `free()` to release memory for both the string and the node structure
+4. **Preventing Memory Leaks**: Ensure all allocated memory is freed when no longer needed
+5. **NULL Safety**: Always check for NULL pointers before dereferencing
+6. **Clean Exit**: Free all resources before exiting in error conditions
+
+## Implementation Tips
+
+1. **Pointer to Pointer**: Use double pointers (`list_t **head`) to modify the head pointer
+2. **Helper Functions**: Create utility functions like `create_node()` to avoid code duplication
+3. **Edge Cases**: Handle empty lists and single-node lists carefully
+4. **Iteration Technique**: Use a temporary pointer for traversal to preserve the head
+5. **Proper Initialization**: Always initialize new nodes' pointers properly
+
+## Compilation
+
+All files should be compiled using:
+
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o output_file
+```
+
+For the assembly program:
+
+```bash
+nasm -f elf64 101-hello_holberton.asm && gcc -no-pie -std=gnu89 101-hello_holberton.o -o hello
+```
+
+## Additional Resources
+
+- [Linked Lists - GeeksforGeeks](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+- [Linked List vs Array - GeeksforGeeks](https://www.geeksforgeeks.org/linked-list-vs-array/)
+- [Understanding and Using Linked Lists in C - Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
+- [Constructor and Destructor in GCC - IBM Documentation](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/16.1.0?topic=attributes-constructor-destructor)

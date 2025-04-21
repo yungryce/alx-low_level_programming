@@ -1,0 +1,61 @@
+{
+  "contextType": "educational",
+  "contextName": "C Preprocessor",
+  "contextDescription": "Introduction to C preprocessor directives, macro definitions, and advanced preprocessing techniques for code generation and configuration",
+  "mainLanguage": "c",
+  "topics": [
+    "c-preprocessor",
+    "macros",
+    "include-directives",
+    "header-files",
+    "conditional-compilation",
+    "include-guards",
+    "predefined-macros"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Define and use object-like macros for constants",
+    "Create function-like macros for common operations",
+    "Implement include guards in header files",
+    "Use predefined macros for meta-programming",
+    "Apply conditional compilation techniques",
+    "Understand the preprocessor's role in compilation",
+    "Create maintainable and portable code using preprocessor directives"
+  ],
+  "prerequisites": [
+    "Basic C programming",
+    "Understanding of compilation process",
+    "Header file inclusion concepts",
+    "Expression evaluation in C"
+  ],
+  "associatedProjects": {
+    "previous": "0x0C-more_malloc_free",
+    "next": "0x0E-structures_typedef",
+    "related": ["0x0F-function_pointers"]
+  },
+  "resources": [
+    {
+      "name": "C Preprocessor Directives",
+      "url": "https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm"
+    },
+    {
+      "name": "GCC Preprocessor Documentation",
+      "url": "https://gcc.gnu.org/onlinedocs/cpp/"
+    }
+  ],
+  "conceptsCovered": [
+    "#define directive",
+    "object-like macros",
+    "function-like macros",
+    "#include directive",
+    "include guards",
+    "conditional compilation",
+    "predefined macros",
+    "macro expansion"
+  ],
+  "devTools": [
+    "cpp (C Preprocessor)",
+    "gcc -E option",
+    "gcc -D option for defining macros"
+  ]
+}

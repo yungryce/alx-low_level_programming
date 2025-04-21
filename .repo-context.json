@@ -1,0 +1,124 @@
+{
+  "contextType": "educational",
+  "contextName": "Low-Level Programming with C",
+  "contextDescription": "Comprehensive curriculum covering C programming from fundamentals through advanced concepts including memory management, data structures, algorithms, and system programming",
+  "mainLanguage": "c",
+  "supportLanguages": ["shell", "assembly", "python", "make"],
+  "topics": [
+    "c-programming",
+    "memory-management",
+    "data-structures",
+    "algorithms",
+    "pointers",
+    "arrays",
+    "strings",
+    "linked-lists",
+    "bit-manipulation",
+    "file-io",
+    "recursion",
+    "dynamic-memory",
+    "preprocessor",
+    "libraries",
+    "makefiles",
+    "system-calls"
+  ],
+  "skillLevel": "beginner-to-advanced",
+  "learningSequence": [
+    "hello-world",
+    "variables-if-else-while",
+    "functions-nested-loops",
+    "debugging",
+    "more-functions-nested-loops",
+    "pointers-arrays-strings",
+    "recursion",
+    "static-libraries",
+    "argc-argv",
+    "malloc-free",
+    "preprocessor",
+    "structures-typedef",
+    "function-pointers",
+    "variadic-functions",
+    "singly-linked-lists",
+    "bit-manipulation",
+    "file-io",
+    "doubly-linked-lists",
+    "dynamic-libraries",
+    "hash-tables",
+    "sorting-algorithms",
+    "makefiles",
+    "binary-trees",
+    "search-algorithms"
+  ],
+  "projectStructure": {
+    "fundamentals": [
+      "0x00-hello_world",
+      "0x01-variables_if_else_while",
+      "0x02-functions_nested_loops",
+      "0x03-debugging",
+      "0x04-more_functions_nested_loops"
+    ],
+    "memoryManagement": [
+      "0x05-pointers_arrays_strings",
+      "0x06-pointers_arrays_strings",
+      "0x07-pointers_arrays_strings",
+      "0x08-recursion",
+      "0x0B-malloc_free",
+      "0x0C-more_malloc_free"
+    ],
+    "codingTools": [
+      "0x09-static_libraries",
+      "0x0A-argc_argv",
+      "0x0D-preprocessor",
+      "0x1C-makefiles"
+    ],
+    "advancedConcepts": [
+      "0x0E-structures_typedef",
+      "0x0F-function_pointers",
+      "0x10-variadic_functions"
+    ],
+    "dataStructures": [
+      "0x12-singly_linked_lists",
+      "0x13-more_singly_linked_lists",
+      "0x17-doubly_linked_lists",
+      "0x1A-hash_tables"
+    ],
+    "systemProgramming": [
+      "0x14-bit_manipulation",
+      "0x15-file_io",
+      "0x18-dynamic_libraries"
+    ],
+    "algorithms": [
+      "0x1E-search_algorithms"
+    ]
+  },
+  "outcomes": {
+    "technicalSkills": [
+      "C language proficiency",
+      "Algorithm design and analysis",
+      "Data structure implementation",
+      "Memory management",
+      "System-level programming",
+      "Debugging and testing",
+      "Code optimization",
+      "Documentation practices"
+    ],
+    "softSkills": [
+      "Analytical thinking",
+      "Problem-solving",
+      "Attention to detail",
+      "Persistence",
+      "Self-directed learning",
+      "Code organization"
+    ]
+  },
+  "resources": [
+    {
+      "name": "The C Programming Language (K&R)",
+      "url": "https://en.wikipedia.org/wiki/The_C_Programming_Language"
+    },
+    {
+      "name": "Betty Style Documentation",
+      "url": "https://github.com/holbertonschool/Betty/wiki"
+    }
+  ]
+}

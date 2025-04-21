@@ -1,0 +1,61 @@
+{
+  "contextType": "educational",
+  "contextName": "Dynamic Memory Allocation in C",
+  "contextDescription": "Introduction to dynamic memory allocation in C using malloc and free functions, covering single and multi-dimensional allocations",
+  "mainLanguage": "c",
+  "topics": [
+    "dynamic-memory-allocation",
+    "malloc",
+    "free",
+    "memory-management",
+    "pointers",
+    "2d-arrays",
+    "string-handling"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Understand the purpose and usage of dynamic memory allocation",
+    "Allocate memory at runtime using malloc",
+    "Free allocated memory properly to prevent leaks",
+    "Create dynamic arrays of various dimensions",
+    "Handle error cases in memory allocation",
+    "Implement string manipulation using dynamic memory",
+    "Manage complex data structures with dynamic memory"
+  ],
+  "prerequisites": [
+    "Pointer manipulation in C",
+    "Array operations",
+    "String handling",
+    "Control flow and loop structures",
+    "Basic memory concepts"
+  ],
+  "associatedProjects": {
+    "previous": "0x0A-argc_argv",
+    "next": "0x0C-more_malloc_free",
+    "related": ["0x0F-function_pointers", "0x12-singly_linked_lists"]
+  },
+  "resources": [
+    {
+      "name": "Dynamic Memory Allocation in C",
+      "url": "https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/"
+    },
+    {
+      "name": "Valgrind Memory Checker",
+      "url": "https://valgrind.org/docs/manual/quick-start.html"
+    }
+  ],
+  "conceptsCovered": [
+    "malloc function",
+    "free function",
+    "memory leaks",
+    "buffer allocation",
+    "dynamic arrays",
+    "2D array allocation",
+    "memory for strings",
+    "allocation failure handling"
+  ],
+  "memoryTools": [
+    "Valgrind",
+    "GDB memory inspection"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "contextType": "educational",
+  "contextName": "Search Algorithms",
+  "contextDescription": "Implementation and analysis of various search algorithms in C, including linear, binary, jump, interpolation, and exponential search techniques",
+  "mainLanguage": "c",
+  "topics": [
+    "search-algorithms",
+    "algorithm-analysis",
+    "time-complexity",
+    "space-complexity",
+    "big-o-notation",
+    "linear-search",
+    "binary-search",
+    "jump-search",
+    "interpolation-search",
+    "exponential-search"
+  ],
+  "skillLevel": "intermediate-advanced",
+  "learningObjectives": [
+    "Implement common search algorithms in C",
+    "Analyze time and space complexity of algorithms",
+    "Select appropriate search techniques for different scenarios",
+    "Apply search algorithms to various data structures",
+    "Optimize search performance for specific use cases",
+    "Handle edge cases in search implementations",
+    "Document algorithm efficiency using Big O notation",
+    "Compare algorithm performance characteristics"
+  ],
+  "prerequisites": [
+    "C programming proficiency",
+    "Data structure knowledge",
+    "Algorithm analysis basics",
+    "Big O notation understanding",
+    "Array and pointer manipulation",
+    "Linked list operations"
+  ],
+  "associatedProjects": {
+    "previous": "0x1D-binary_trees",
+    "next": "0x1F-pascal_triangle",
+    "related": ["0x12-singly_linked_lists", "0x13-more_singly_linked_lists", "0x17-doubly_linked_lists"]
+  },
+  "resources": [
+    {
+      "name": "Search Algorithm Fundamentals",
+      "url": "https://www.geeksforgeeks.org/searching-algorithms/"
+    },
+    {
+      "name": "Big O Notation",
+      "url": "https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity"
+    }
+  ],
+  "conceptsCovered": [
+    "linear search algorithm",
+    "binary search algorithm",
+    "jump search algorithm",
+    "interpolation search algorithm",
+    "exponential search algorithm",
+    "advanced binary search",
+    "skip list searching",
+    "time complexity analysis",
+    "space complexity analysis",
+    "algorithm efficiency"
+  ],
+  "algorithmComplexity": {
+    "linearSearch": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "binarySearch": {
+      "time": "O(log n)",
+      "space": "O(1) for iterative, O(log n) for recursive"
+    },
+    "jumpSearch": {
+      "time": "O(√n)",
+      "space": "O(1)"
+    },
+    "interpolationSearch": {
+      "time": "O(log log n) average, O(n) worst",
+      "space": "O(1)"
+    },
+    "exponentialSearch": {
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  }
+}

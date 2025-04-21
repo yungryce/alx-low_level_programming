@@ -1,0 +1,62 @@
+{
+  "contextType": "educational",
+  "contextName": "Advanced Memory Allocation in C",
+  "contextDescription": "Exploration of advanced dynamic memory allocation techniques in C including calloc, realloc, and handling allocation failures",
+  "mainLanguage": "c",
+  "topics": [
+    "advanced-memory-allocation",
+    "calloc",
+    "realloc",
+    "memory-management",
+    "buffer-operations",
+    "error-handling",
+    "exit-function"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Implement safe memory allocation with error checking",
+    "Use calloc for zero-initialized memory allocation",
+    "Apply realloc for dynamic memory resizing",
+    "Calculate appropriate memory sizes for operations",
+    "Handle memory allocation failures gracefully",
+    "Implement complex algorithms requiring dynamic memory",
+    "Prevent memory leaks in advanced memory operations"
+  ],
+  "prerequisites": [
+    "Basic malloc and free operations",
+    "Pointer manipulation",
+    "Memory management concepts",
+    "Error handling in C",
+    "Size calculations for different data types"
+  ],
+  "associatedProjects": {
+    "previous": "0x0B-malloc_free",
+    "next": "0x0D-preprocessor",
+    "related": ["0x0E-structures_typedef", "0x12-singly_linked_lists"]
+  },
+  "resources": [
+    {
+      "name": "Advanced Memory Allocation in C",
+      "url": "https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/"
+    },
+    {
+      "name": "Understanding realloc Function",
+      "url": "https://www.tutorialspoint.com/c_standard_library/c_function_realloc.htm"
+    }
+  ],
+  "conceptsCovered": [
+    "malloc with error checking",
+    "calloc function",
+    "realloc function",
+    "exit function usage",
+    "memory size calculation",
+    "buffer operations",
+    "memory initialization",
+    "allocation failure handling"
+  ],
+  "memoryTools": [
+    "Valgrind",
+    "size_t type for memory operations",
+    "EXIT_FAILURE macros"
+  ]
+}

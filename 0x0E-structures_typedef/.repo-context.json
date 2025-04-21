@@ -1,0 +1,63 @@
+{
+  "contextType": "educational",
+  "contextName": "Structures and typedef in C",
+  "contextDescription": "Introduction to C structures and typedef for creating custom data types, organizing related data, and implementing abstract data types",
+  "mainLanguage": "c",
+  "topics": [
+    "structures",
+    "typedef",
+    "custom-data-types",
+    "data-abstraction",
+    "memory-management",
+    "composite-types",
+    "header-organization"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Define and initialize C structures",
+    "Use typedef to create aliases for data types",
+    "Create custom data types for specific applications",
+    "Manage memory for structure instances",
+    "Access and manipulate structure members",
+    "Implement functions that work with structures",
+    "Organize code with header files for custom types"
+  ],
+  "prerequisites": [
+    "Basic C programming",
+    "Pointers and memory concepts",
+    "Dynamic memory allocation",
+    "Function implementation",
+    "Header file usage"
+  ],
+  "associatedProjects": {
+    "previous": "0x0D-preprocessor",
+    "next": "0x0F-function_pointers",
+    "related": ["0x12-singly_linked_lists", "0x13-more_singly_linked_lists"]
+  },
+  "resources": [
+    {
+      "name": "C Structures and typedef",
+      "url": "https://www.tutorialspoint.com/cprogramming/c_structures.htm"
+    },
+    {
+      "name": "Custom Data Types in C",
+      "url": "https://www.geeksforgeeks.org/typedef-in-c/"
+    }
+  ],
+  "conceptsCovered": [
+    "structure definition",
+    "structure initialization",
+    "typedef keyword",
+    "structure memory allocation",
+    "structure member access",
+    "structure pointers",
+    "structure memory management",
+    "abstracting data with structures"
+  ],
+  "dataTypes": [
+    "struct",
+    "typedef",
+    "structure pointers",
+    "nested structures"
+  ]
+}

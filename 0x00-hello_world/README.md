@@ -1,35 +1,62 @@
-# Introduction to C Programming
+# Introduction to C Programming - Hello World
 
-This repository provides an introduction to the C programming language, covering script executables, preprocessors, and compilers.
+This directory contains introductory exercises for the C programming language, focusing on the compilation process, basic syntax, and standard input/output operations.
 
-## Script Executables
+## Learning Objectives
 
-C programs are typically compiled into script executables that can be run on various operating systems. The C code is written in plain text files with a ".c" extension. These files are then compiled using a C compiler to generate an executable file that can be executed directly.
+By completing the exercises in this directory, you will be able to:
+- Understand the C compilation process and its stages
+- Create and execute basic C programs
+- Use shell scripts to automate compilation steps
+- Apply proper C syntax following Betty style guidelines
+- Utilize standard output functions like `printf` and `puts`
+- Understand the memory layout of C programs
+- Manipulate preprocessor directives
 
-## Preprocessors
+## The C Compilation Process
 
-The C preprocessor is a tool that manipulates the source code before it is compiled. It performs various tasks, such as including header files, macro expansions, and conditional compilation. Preprocessor directives begin with a hash symbol (#) and are processed before the actual compilation of the code.
+The C compilation process consists of four main stages:
+
+1. **Preprocessing**: Handles directives like `#include` and `#define`
+2. **Compilation**: Converts C code to assembly language
+3. **Assembly**: Converts assembly code to object code
+4. **Linking**: Combines object files and libraries into an executable
+
+This directory includes scripts that demonstrate each of these stages.
+
+## Project Files
+
+### Shell Scripts
+- **[0-preprocessor](./0-preprocessor)**: Runs a C file through the preprocessor and saves the result
+- **[1-compiler](./1-compiler)**: Compiles a C file without linking
+- **[2-assembler](./2-assembler)**: Generates assembly code from a C file
+- **[3-name](./3-name)**: Creates an executable named `cisfun` from a C file
+
+### C Programs
+- **[4-puts.c](./4-puts.c)**: Prints a string using the `puts` function
+- **[5-printf.c](./5-printf.c)**: Prints a string using the `printf` function
+- **[6-size.c](./6-size.c)**: Prints the size of various data types
+- **[100-intel](./100-intel)**: Generates Intel syntax assembly code
+- **[101-quote.c](./101-quote.c)**: Prints to standard error without using `printf` or `puts`
 
 ## Compilers
 
-Compilers are software programs that translate human-readable C code into machine-readable instructions that can be executed by a computer. The compiler reads the C source files and produces object files containing machine code specific to the target architecture. These object files are then linked together to create the final executable.
+This project uses GCC (GNU Compiler Collection) to compile C code. Other popular C compilers include:
 
-Some popular C compilers include:
-
-- GCC (GNU Compiler Collection)
 - Clang
 - Microsoft Visual C++
 - Intel C++ Compiler
 
 ## Getting Started
 
-To compile and run C programs, ensure that you have a compatible C compiler installed on your system. Choose a suitable compiler based on your operating system and preferences. Once installed, you can compile C programs using the command-line interface or integrated development environments (IDEs) such as Visual Studio Code, Xcode, or Eclipse.
+To run these exercises, you need a Linux environment with GCC installed.
 
-For more detailed instructions on setting up a development environment and compiling C programs, please refer to the documentation or tutorials specific to your chosen C compiler.
+### Compiling and Running Examples
 
-## Examples
-
-In this repository, you will find examples of C code demonstrating various concepts in C. Feel free to explore the code and experiment with it to deepen your understanding of the C programming language.
+1. To run the preprocessor on a file:
+   ```bash
+   ./0-preprocessor
+```
 
 ## Contributing
 

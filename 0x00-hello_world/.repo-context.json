@@ -1,0 +1,43 @@
+{
+  "contextType": "educational",
+  "contextName": "Hello World in C",
+  "contextDescription": "Introduction to C programming fundamentals covering the compilation process, basic syntax, and standard I/O operations",
+  "mainLanguage": "c",
+  "supportLanguages": ["shell"],
+  "topics": [
+    "compilation-process",
+    "c-programming",
+    "standard-io",
+    "memory-layout",
+    "preprocessor",
+    "betty-style"
+  ],
+  "skillLevel": "beginner",
+  "learningObjectives": [
+    "Understand the C compilation process",
+    "Write and execute basic C programs",
+    "Use standard input and output functions",
+    "Apply proper coding style guidelines",
+    "Manipulate strings and basic data types",
+    "Create shell scripts to automate compilation steps"
+  ],
+  "prerequisites": [
+    "Basic command line knowledge",
+    "Text editor familiarity",
+    "Understanding of basic programming concepts"
+  ],
+  "associatedProjects": {
+    "next": "0x01-variables_if_else_while",
+    "related": ["printf"]
+  },
+  "resources": [
+    {
+      "name": "Betty Style Guide",
+      "url": "https://github.com/holbertonschool/Betty/wiki"
+    },
+    {
+      "name": "GCC Documentation",
+      "url": "https://gcc.gnu.org/onlinedocs/"
+    }
+  ]
+}

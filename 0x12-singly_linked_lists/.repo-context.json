@@ -1,0 +1,85 @@
+{
+  "contextType": "educational",
+  "contextName": "Singly Linked Lists in C",
+  "contextDescription": "Implementation of singly linked list data structure in C, covering node creation, list traversal, insertion, deletion, and memory management",
+  "mainLanguage": "c",
+  "supportLanguages": ["assembly"],
+  "topics": [
+    "linked-lists",
+    "data-structures",
+    "dynamic-memory",
+    "pointers",
+    "self-referential-structures",
+    "list-operations",
+    "memory-management",
+    "string-duplication",
+    "constructor-functions"
+  ],
+  "skillLevel": "intermediate",
+  "learningObjectives": [
+    "Implement a singly linked list data structure in C",
+    "Create and manage nodes using dynamic memory allocation",
+    "Traverse linked lists using pointer manipulation",
+    "Insert nodes at the beginning and end of lists",
+    "Free memory properly to avoid memory leaks",
+    "Apply self-referential structures in programming",
+    "Use function attributes for execution ordering",
+    "Implement basic string operations with linked lists",
+    "Write simple assembly code for string output"
+  ],
+  "prerequisites": [
+    "Pointers and dynamic memory allocation",
+    "Struct definition and usage",
+    "Memory management concepts",
+    "Function implementation",
+    "Basic data types"
+  ],
+  "associatedProjects": {
+    "previous": "0x10-variadic_functions",
+    "next": "0x13-more_singly_linked_lists",
+    "related": ["0x17-doubly_linked_lists", "0x1A-hash_tables"]
+  },
+  "resources": [
+    {
+      "name": "Linked Lists in C",
+      "url": "https://www.geeksforgeeks.org/linked-list-set-1-introduction/"
+    },
+    {
+      "name": "Dynamic Memory Allocation for Structures",
+      "url": "https://www.learn-c.org/en/Linked_lists"
+    }
+  ],
+  "conceptsCovered": [
+    "linked list structure",
+    "node creation and linking",
+    "list traversal",
+    "head pointer management",
+    "inserting at beginning",
+    "appending at end",
+    "memory allocation for nodes",
+    "string duplication",
+    "constructor attributes",
+    "memory cleanup",
+    "assembly basics"
+  ],
+  "dataStructures": [
+    "list_t struct",
+    "node structure",
+    "self-referential structures"
+  ],
+  "memoryOperations": [
+    "malloc for node creation",
+    "free for node deletion",
+    "strdup for string copying"
+  ],
+  "complexityAnalysis": {
+    "insertion": {
+      "beginning": "O(1)",
+      "end (without tail pointer)": "O(n)",
+      "end (with tail pointer)": "O(1)"
+    },
+    "traversal": "O(n)",
+    "search": "O(n)",
+    "deletion": "O(1) or O(n) depending on position"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "contextType": "educational",
+  "contextName": "More Singly Linked Lists in C",
+  "contextDescription": "Advanced implementation and manipulation of singly linked lists in C, including complex operations like reversal, cycle detection, and safe memory management",
+  "mainLanguage": "c",
+  "topics": [
+    "advanced-linked-lists",
+    "node-deletion",
+    "list-reversal",
+    "cycle-detection",
+    "index-based-operations",
+    "safe-memory-management",
+    "pointer-manipulation",
+    "recursive-list-operations",
+    "data-structure-algorithms"
+  ],
+  "skillLevel": "intermediate-advanced",
+  "learningObjectives": [
+    "Implement advanced operations on singly linked lists",
+    "Delete nodes at specific positions in a list",
+    "Reverse linked lists using efficient algorithms",
+    "Detect and handle cycles in linked lists",
+    "Access and manipulate nodes by index",
+    "Safely manage memory in complex list operations",
+    "Apply proper error handling in list functions",
+    "Calculate aggregates across list elements",
+    "Insert nodes at arbitrary positions"
+  ],
+  "prerequisites": [
+    "Basic linked list implementation",
+    "Dynamic memory allocation",
+    "Pointer manipulation",
+    "Structure handling",
+    "Error handling techniques"
+  ],
+  "associatedProjects": {
+    "previous": "0x12-singly_linked_lists",
+    "next": "0x14-bit_manipulation",
+    "related": ["0x17-doubly_linked_lists", "0x1A-hash_tables"]
+  },
+  "resources": [
+    {
+      "name": "Advanced Linked List Operations",
+      "url": "https://www.geeksforgeeks.org/data-structures/linked-list/"
+    },
+    {
+      "name": "Cycle Detection in Linked Lists",
+      "url": "https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/"
+    }
+  ],
+  "conceptsCovered": [
+    "complex linked list operations",
+    "node deletion algorithms",
+    "list reversal techniques",
+    "cycle detection methods",
+    "index-based node access",
+    "safe list traversal",
+    "memory management for lists",
+    "Floyd's cycle-finding algorithm",
+    "list element aggregation",
+    "node insertion strategies"
+  ],
+  "dataStructures": [
+    "listint_t struct",
+    "integer linked lists",
+    "cyclic lists"
+  ],
+  "algorithms": [
+    "iterative reversal",
+    "Floyd's tortoise and hare",
+    "index-based traversal",
+    "safe cycle handling"
+  ],
+  "complexityAnalysis": {
+    "reversal": "O(n)",
+    "cycle detection": "O(n)",
+    "node access by index": "O(n)",
+    "insertion at position": "O(n)",
+    "deletion at position": "O(n)"
+  }
+}

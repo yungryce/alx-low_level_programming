@@ -1,0 +1,66 @@
+{
+  "contextType": "educational",
+  "contextName": "Variables, If-Else, While in C",
+  "contextDescription": "Introduction to variables, conditional statements, and loops in C programming, covering basic control flow and data manipulation",
+  "mainLanguage": "c",
+  "topics": [
+    "variables",
+    "if-else-statements",
+    "while-loops",
+    "control-flow",
+    "ascii-manipulation",
+    "random-numbers",
+    "logical-operators",
+    "comparison-operators"
+  ],
+  "skillLevel": "beginner",
+  "learningObjectives": [
+    "Declare and use variables in C programs",
+    "Implement conditional logic with if-else statements",
+    "Create loops using while constructs",
+    "Generate and work with random numbers",
+    "Print characters and numbers to standard output",
+    "Understand ASCII values and character representations",
+    "Create programs with nested control structures",
+    "Implement patterns and sequences using loops"
+  ],
+  "prerequisites": [
+    "Basic C syntax",
+    "C program structure",
+    "Standard input/output concepts",
+    "Basic operators"
+  ],
+  "associatedProjects": {
+    "previous": "0x00-hello_world",
+    "next": "0x02-functions_nested_loops",
+    "related": ["0x04-more_functions_nested_loops"]
+  },
+  "resources": [
+    {
+      "name": "C Control Flow",
+      "url": "https://www.tutorialspoint.com/cprogramming/c_decision_making.htm"
+    },
+    {
+      "name": "ASCII Table Reference",
+      "url": "https://www.asciitable.com/"
+    }
+  ],
+  "conceptsCovered": [
+    "variable declaration",
+    "conditional statements",
+    "loop structures",
+    "putchar function",
+    "character codes",
+    "logical operators",
+    "comparison operators",
+    "program flow control",
+    "nested conditions",
+    "random number generation"
+  ],
+  "compilationFlags": [
+    "-Wall",
+    "-Werror",
+    "-Wextra",
+    "-pedantic"
+  ]
+}
