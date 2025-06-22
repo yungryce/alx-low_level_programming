@@ -1,73 +1,54 @@
 {
-  "contextType": "educational",
-  "contextName": "More Functions and Nested Loops in C",
-  "contextDescription": "Advanced exploration of functions and nested loops in C, focusing on character and number operations, pattern generation, and algorithmic problem-solving",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x04-more_functions_nested_loops",
+    "type": "educational",
+    "scope": "C programming: advanced functions and nested loops.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Covers advanced function usage and complex nested loop constructs in C."
+  },
+  "tech_stack": {
+    "primary": ["c", "shell"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Advanced function usage",
+      "Complex nested loops"
+    ],
+    "domain": [
+      "c-programming",
+      "control flow"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
-    "advanced-functions",
+    "functions",
     "nested-loops",
-    "character-classification",
-    "number-operations",
-    "pattern-printing",
-    "modular-design",
-    "algorithm-implementation",
-    "code-reuse"
+    "c-programming"
   ],
-  "skillLevel": "intermediate",
-  "learningObjectives": [
-    "Implement character classification functions",
-    "Create mathematical operation functions",
-    "Generate patterns and shapes using nested loops",
-    "Design modular and reusable code components",
-    "Solve algorithmic problems with efficient approaches",
-    "Apply nested loops for complex output patterns",
-    "Implement the Fizz-Buzz algorithm",
-    "Find prime factors using mathematical concepts"
-  ],
-  "prerequisites": [
-    "Basic function implementation",
-    "Simple loops",
-    "Variable manipulation",
-    "Control flow statements",
-    "C compilation process understanding"
-  ],
+  "skillLevel": "beginner",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Use advanced functions in C",
+      "Implement complex nested loops"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Completion of 0x03-debugging module"],
   "associatedProjects": {
     "previous": "0x03-debugging",
     "next": "0x05-pointers_arrays_strings",
-    "related": ["0x02-functions_nested_loops"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Advanced Functions in C",
-      "url": "https://www.geeksforgeeks.org/c-functions/"
-    },
-    {
-      "name": "Pattern Printing in C",
-      "url": "https://www.geeksforgeeks.org/programs-printing-pyramid-patterns-c/"
-    }
-  ],
-  "conceptsCovered": [
-    "function design and implementation",
-    "character operations",
-    "nested loop patterns",
-    "conditional printing",
-    "terminal-based drawing",
-    "mathematical algorithms",
-    "prime factorization",
-    "integer manipulation",
-    "geometric shape generation",
-    "fizz-buzz algorithm"
-  ],
-  "patternTypes": [
-    "lines",
-    "diagonals",
-    "squares",
-    "triangles"
-  ],
-  "compilationFlags": [
-    "-Wall",
-    "-Werror",
-    "-Wextra",
-    "-pedantic"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

@@ -1,75 +1,55 @@
 {
-  "contextType": "educational",
-  "contextName": "Pointers, Arrays, and Strings in C",
-  "contextDescription": "Introduction to pointers, arrays, and string manipulation in C, covering memory concepts, address manipulation, and data structure operations",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x05-pointers_arrays_strings",
+    "type": "educational",
+    "scope": "C programming: pointers, arrays, and strings fundamentals.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Covers pointer basics, array manipulation, and string operations in C."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Pointer basics",
+      "Array manipulation",
+      "String operations"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "pointers",
     "arrays",
     "strings",
-    "memory-management",
-    "pass-by-reference",
-    "pointer-arithmetic",
-    "string-manipulation",
-    "memory-addresses",
-    "data-structures"
+    "c-programming"
   ],
-  "skillLevel": "intermediate",
-  "learningObjectives": [
-    "Understand and use pointers to manipulate memory",
-    "Implement pass-by-reference using pointers",
-    "Create functions for string manipulation and traversal",
-    "Apply array operations using both indexing and pointers",
-    "Implement common string algorithms like reverse and length",
-    "Convert string representations to numeric values",
-    "Manipulate memory directly through addresses",
-    "Generate random character sequences for passwords"
-  ],
-  "prerequisites": [
-    "C basics (variables, operators)",
-    "Functions and parameters",
-    "Control flow and loops",
-    "Basic memory concepts"
-  ],
+  "skillLevel": "beginner",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Use pointers for memory access",
+      "Manipulate arrays and strings"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Completion of 0x04-more_functions_nested_loops module"],
   "associatedProjects": {
     "previous": "0x04-more_functions_nested_loops",
     "next": "0x06-pointers_arrays_strings",
-    "related": ["0x07-pointers_arrays_strings", "0x08-recursion"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Pointers in C",
-      "url": "https://www.tutorialspoint.com/cprogramming/c_pointers.htm"
-    },
-    {
-      "name": "Arrays and Strings in C",
-      "url": "https://www.learn-c.org/en/Arrays_and_Pointers"
-    }
-  ],
-  "conceptsCovered": [
-    "pointer declaration",
-    "pointer dereferencing",
-    "memory addresses",
-    "pass by reference",
-    "array traversal",
-    "string termination",
-    "character manipulation",
-    "buffer management",
-    "string conversion",
-    "value swapping",
-    "random generation"
-  ],
-  "memoryOperations": [
-    "address retrieval",
-    "value access through pointers",
-    "memory content modification",
-    "pointer arithmetic",
-    "array indexing"
-  ],
-  "stringFunctions": [
-    "strlen equivalent",
-    "puts equivalent",
-    "strcpy equivalent",
-    "atoi equivalent"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

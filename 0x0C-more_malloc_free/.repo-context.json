@@ -1,62 +1,52 @@
 {
-  "contextType": "educational",
-  "contextName": "Advanced Memory Allocation in C",
-  "contextDescription": "Exploration of advanced dynamic memory allocation techniques in C including calloc, realloc, and handling allocation failures",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x0C-more_malloc_free",
+    "type": "educational",
+    "scope": "Exploration of advanced dynamic memory allocation techniques in C including calloc, realloc, and handling allocation failures.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Exploration of advanced dynamic memory allocation techniques in C including calloc, realloc, and handling allocation failures."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Implement safe memory allocation with error checking",
+      "Use calloc for zero-initialized memory allocation"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "advanced-memory-allocation",
     "calloc",
-    "realloc",
-    "memory-management",
-    "buffer-operations",
-    "error-handling",
-    "exit-function"
+    "realloc"
   ],
   "skillLevel": "intermediate",
-  "learningObjectives": [
-    "Implement safe memory allocation with error checking",
-    "Use calloc for zero-initialized memory allocation",
-    "Apply realloc for dynamic memory resizing",
-    "Calculate appropriate memory sizes for operations",
-    "Handle memory allocation failures gracefully",
-    "Implement complex algorithms requiring dynamic memory",
-    "Prevent memory leaks in advanced memory operations"
-  ],
-  "prerequisites": [
-    "Basic malloc and free operations",
-    "Pointer manipulation",
-    "Memory management concepts",
-    "Error handling in C",
-    "Size calculations for different data types"
-  ],
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Use calloc and realloc safely"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Basic malloc and free operations"],
   "associatedProjects": {
     "previous": "0x0B-malloc_free",
     "next": "0x0D-preprocessor",
-    "related": ["0x0E-structures_typedef", "0x12-singly_linked_lists"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Advanced Memory Allocation in C",
-      "url": "https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/"
-    },
-    {
-      "name": "Understanding realloc Function",
-      "url": "https://www.tutorialspoint.com/c_standard_library/c_function_realloc.htm"
-    }
-  ],
-  "conceptsCovered": [
-    "malloc with error checking",
-    "calloc function",
-    "realloc function",
-    "exit function usage",
-    "memory size calculation",
-    "buffer operations",
-    "memory initialization",
-    "allocation failure handling"
-  ],
-  "memoryTools": [
-    "Valgrind",
-    "size_t type for memory operations",
-    "EXIT_FAILURE macros"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

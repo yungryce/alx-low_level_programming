@@ -1,9 +1,34 @@
 {
-  "contextType": "educational",
-  "contextName": "Hello World in C",
-  "contextDescription": "Introduction to C programming fundamentals covering the compilation process, basic syntax, and standard I/O operations",
-  "mainLanguage": "c",
-  "supportLanguages": ["shell"],
+  "project_identity": {
+    "name": "0x00-hello_world",
+    "type": "educational",
+    "scope": "Introduction to C programming fundamentals covering the compilation process, basic syntax, and standard I/O operations.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Covers C compilation, basic syntax, standard I/O, memory layout, preprocessor, and coding style."
+  },
+  "tech_stack": {
+    "primary": ["c", "shell"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "C compilation process",
+      "Standard I/O functions",
+      "Basic C syntax",
+      "String manipulation",
+      "Shell scripting for automation"
+    ],
+    "domain": [
+      "c-programming",
+      "compilation",
+      "coding style"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "compilation-process",
     "c-programming",
@@ -13,31 +38,28 @@
     "betty-style"
   ],
   "skillLevel": "beginner",
-  "learningObjectives": [
-    "Understand the C compilation process",
-    "Write and execute basic C programs",
-    "Use standard input and output functions",
-    "Apply proper coding style guidelines",
-    "Manipulate strings and basic data types",
-    "Create shell scripts to automate compilation steps"
-  ],
-  "prerequisites": [
-    "Basic command line knowledge",
-    "Text editor familiarity",
-    "Understanding of basic programming concepts"
-  ],
-  "associatedProjects": {
-    "next": "0x01-variables_if_else_while",
-    "related": ["printf"]
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Understand the C compilation process",
+      "Write and execute basic C programs",
+      "Use standard input and output functions",
+      "Apply proper coding style guidelines",
+      "Manipulate strings and basic data types",
+      "Create shell scripts to automate compilation steps"
+    ],
+    "softSkills": []
   },
-  "resources": [
-    {
-      "name": "Betty Style Guide",
-      "url": "https://github.com/holbertonschool/Betty/wiki"
-    },
-    {
-      "name": "GCC Documentation",
-      "url": "https://gcc.gnu.org/onlinedocs/"
-    }
-  ]
+  "prerequisites": [],
+  "associatedProjects": {
+    "previous": "",
+    "next": "0x01-variables_if_else_while",
+    "related": []
+  },
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

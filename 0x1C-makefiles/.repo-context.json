@@ -1,76 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "Makefiles",
-  "contextDescription": "Introduction to GNU Make and makefile creation for automating build processes, managing dependencies, and optimizing software compilation",
-  "mainLanguage": "make",
-  "supportLanguages": ["c", "python"],
+  "project_identity": {
+    "name": "0x1C-makefiles",
+    "type": "educational",
+    "scope": "Introduction to makefiles in C, covering build automation, targets, dependencies, and rules.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to makefiles in C, covering build automation, targets, dependencies, and rules."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": ["make"],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Write and use makefiles",
+      "Automate builds with make"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "makefiles",
-    "build-automation",
-    "dependency-management",
-    "compilation-process",
-    "makefile-rules",
-    "makefile-variables",
-    "phony-targets",
-    "pattern-rules"
+    "build-automation"
   ],
   "skillLevel": "intermediate",
-  "learningObjectives": [
-    "Create makefiles for building C programs",
-    "Define build rules and dependencies",
-    "Use variables for makefile flexibility",
-    "Implement standard cleaning and rebuild targets",
-    "Apply compiler flags in the build process",
-    "Create phony targets for maintenance operations",
-    "Optimize build processes with efficient dependency tracking",
-    "Understand makefile syntax and conventions"
-  ],
-  "prerequisites": [
-    "C programming basics",
-    "Compilation process understanding",
-    "Command line familiarity",
-    "Basic shell commands"
-  ],
-  "associatedProjects": {
-    "previous": "0x1B-sorting_algorithms",
-    "next": "0x1D-binary_trees",
-    "related": ["0x1E-search_algorithms"]
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Automate builds with makefiles"
+    ],
+    "softSkills": []
   },
-  "resources": [
-    {
-      "name": "GNU Make Manual",
-      "url": "https://www.gnu.org/software/make/manual/make.html"
-    },
-    {
-      "name": "Makefile Tutorial",
-      "url": "https://makefiletutorial.com/"
-    }
-  ],
-  "conceptsCovered": [
-    "makefile structure",
-    "explicit rules",
-    "implicit rules",
-    "variables and macros",
-    "automatic variables",
-    "phony targets",
-    "dependency tracking",
-    "incremental builds",
-    "pattern rules",
-    "conditional directives"
-  ],
-  "makefileComponents": [
-    "targets",
-    "prerequisites",
-    "recipes",
-    "variables",
-    "special targets",
-    "pattern rules"
-  ],
-  "standardTargets": [
-    "all",
-    "clean",
-    "oclean",
-    "fclean",
-    "re"
-  ]
+  "prerequisites": ["C programming basics"],
+  "associatedProjects": {
+    "previous": "0x1A-hash_tables",
+    "next": "0x1E-search_algorithms",
+    "related": []
+  },
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

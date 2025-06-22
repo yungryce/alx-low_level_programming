@@ -1,75 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "Variadic Functions in C",
-  "contextDescription": "Implementation of functions that accept a variable number of arguments using stdarg.h macros, enabling flexible function designs with dynamic parameter processing",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x10-variadic_functions",
+    "type": "educational",
+    "scope": "Introduction to variadic functions in C, covering stdarg.h macros, argument handling, and practical use cases.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to variadic functions in C, covering stdarg.h macros, argument handling, and practical use cases."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": ["stdarg.h"]
+  },
+  "skill_manifest": {
+    "technical": [
+      "Implement variadic functions",
+      "Use stdarg.h macros"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "variadic-functions",
-    "variable-arguments",
-    "stdarg-macros",
-    "dynamic-parameter-processing",
-    "format-specifiers",
-    "va-list",
-    "va-start",
-    "va-arg",
-    "va-end"
+    "stdarg.h"
   ],
-  "skillLevel": "intermediate-advanced",
-  "learningObjectives": [
-    "Implement functions with variable argument lists",
-    "Use stdarg.h macros for argument processing",
-    "Create functions that adapt to different numbers of arguments",
-    "Process arguments of different types dynamically",
-    "Apply proper argument list initialization and cleanup",
-    "Design format specifiers for argument interpretation",
-    "Handle edge cases in variable argument functions",
-    "Build flexible APIs using variadic functions"
-  ],
-  "prerequisites": [
-    "Function implementation in C",
-    "Memory concepts and data types",
-    "Macro usage",
-    "Type handling",
-    "Pointer operations"
-  ],
+  "skillLevel": "intermediate",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Write and use variadic functions"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Function pointers in C"],
   "associatedProjects": {
     "previous": "0x0F-function_pointers",
     "next": "0x12-singly_linked_lists",
-    "related": ["0x0E-structures_typedef", "0x0B-malloc_free"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Variadic Functions in C",
-      "url": "https://www.gnu.org/software/libc/manual/html_node/Variadic-Functions.html"
-    },
-    {
-      "name": "stdarg.h Macros",
-      "url": "https://www.tutorialspoint.com/c_standard_library/stdarg_h.htm"
-    }
-  ],
-  "conceptsCovered": [
-    "variable argument lists",
-    "va_list type",
-    "va_start macro",
-    "va_arg macro",
-    "va_end macro",
-    "argument count parameters",
-    "format string parsing",
-    "type-based argument extraction",
-    "null-terminated argument lists",
-    "dynamic parameter handling"
-  ],
-  "stdargMacros": [
-    "va_list",
-    "va_start",
-    "va_arg",
-    "va_end",
-    "va_copy"
-  ],
-  "implementationExamples": [
-    "sum calculation",
-    "number printing",
-    "string printing",
-    "mixed type handling"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

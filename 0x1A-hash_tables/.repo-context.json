@@ -1,79 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "Hash Tables in C",
-  "contextDescription": "Implementation of hash tables from scratch in C, covering hash functions, collision handling, and operations on key-value pairs",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x1A-hash_tables",
+    "type": "educational",
+    "scope": "Introduction to hash tables in C, covering hash functions, collision handling, and efficient data retrieval.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to hash tables in C, covering hash functions, collision handling, and efficient data retrieval."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Implement hash tables",
+      "Handle collisions efficiently"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "hash-tables",
-    "data-structures",
-    "hash-functions",
-    "collision-handling",
-    "key-value-pairs",
-    "linked-lists",
-    "memory-management",
-    "algorithm-complexity"
+    "collision-handling"
   ],
-  "skillLevel": "intermediate-advanced",
-  "learningObjectives": [
-    "Implement a hash table data structure from scratch",
-    "Design and evaluate hash functions",
-    "Handle collisions using chaining with linked lists",
-    "Create basic hash table operations (create, set, get, delete)",
-    "Analyze time and space complexity of hash table operations",
-    "Manage memory for complex data structures",
-    "Implement a sorted hash table with ordered traversal",
-    "Apply hash tables to solve common programming problems"
-  ],
-  "prerequisites": [
-    "Dynamic memory allocation",
-    "Linked list implementation",
-    "Pointer manipulation",
-    "Data structure concepts",
-    "Algorithm analysis basics",
-    "C structures and typedefs"
-  ],
-  "associatedProjects": {
-    "previous": "0x19-stacks_queues_lifo_fifo",
-    "next": "0x1B-sorting_algorithms",
-    "related": ["0x17-doubly_linked_lists", "0x1C-makefiles"]
+  "skillLevel": "intermediate",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Work with hash tables"
+    ],
+    "softSkills": []
   },
-  "resources": [
-    {
-      "name": "Hash Table Implementation in C",
-      "url": "https://www.geeksforgeeks.org/implementing-hash-table-in-c-with-separate-chaining/"
-    },
-    {
-      "name": "DJB2 Hash Algorithm",
-      "url": "http://www.cse.yorku.ca/~oz/hash.html"
-    }
-  ],
-  "conceptsCovered": [
-    "hash function algorithms",
-    "collision resolution techniques",
-    "separate chaining",
-    "key-value storage",
-    "dynamic array management",
-    "hash table operations",
-    "djb2 algorithm",
-    "ordered hash tables",
-    "memory cleanup strategies"
-  ],
-  "dataStructures": [
-    "hash_table_t",
-    "hash_node_t",
-    "shash_table_t",
-    "shash_node_t"
-  ],
-  "algorithmComplexity": {
-    "average": {
-      "lookup": "O(1)",
-      "insertion": "O(1)",
-      "deletion": "O(1)"
-    },
-    "worst": {
-      "lookup": "O(n)",
-      "insertion": "O(n)",
-      "deletion": "O(n)"
-    }
+  "prerequisites": ["C programming basics"],
+  "associatedProjects": {
+    "previous": "0x18-dynamic_libraries",
+    "next": "0x1C-makefiles",
+    "related": []
+  },
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
   }
 }

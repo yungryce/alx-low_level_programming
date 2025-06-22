@@ -1,81 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "More Singly Linked Lists in C",
-  "contextDescription": "Advanced implementation and manipulation of singly linked lists in C, including complex operations like reversal, cycle detection, and safe memory management",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x13-more_singly_linked_lists",
+    "type": "educational",
+    "scope": "Advanced operations on singly linked lists in C, including advanced insertion, deletion, and memory management techniques.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Advanced operations on singly linked lists in C, including advanced insertion, deletion, and memory management techniques."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Advanced singly linked list operations",
+      "Memory management for linked lists"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
-    "advanced-linked-lists",
-    "node-deletion",
-    "list-reversal",
-    "cycle-detection",
-    "index-based-operations",
-    "safe-memory-management",
-    "pointer-manipulation",
-    "recursive-list-operations",
-    "data-structure-algorithms"
+    "singly-linked-lists",
+    "memory-management"
   ],
-  "skillLevel": "intermediate-advanced",
-  "learningObjectives": [
-    "Implement advanced operations on singly linked lists",
-    "Delete nodes at specific positions in a list",
-    "Reverse linked lists using efficient algorithms",
-    "Detect and handle cycles in linked lists",
-    "Access and manipulate nodes by index",
-    "Safely manage memory in complex list operations",
-    "Apply proper error handling in list functions",
-    "Calculate aggregates across list elements",
-    "Insert nodes at arbitrary positions"
-  ],
-  "prerequisites": [
-    "Basic linked list implementation",
-    "Dynamic memory allocation",
-    "Pointer manipulation",
-    "Structure handling",
-    "Error handling techniques"
-  ],
+  "skillLevel": "intermediate",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Implement advanced linked list operations"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Singly linked lists in C"],
   "associatedProjects": {
     "previous": "0x12-singly_linked_lists",
     "next": "0x14-bit_manipulation",
-    "related": ["0x17-doubly_linked_lists", "0x1A-hash_tables"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Advanced Linked List Operations",
-      "url": "https://www.geeksforgeeks.org/data-structures/linked-list/"
-    },
-    {
-      "name": "Cycle Detection in Linked Lists",
-      "url": "https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/"
-    }
-  ],
-  "conceptsCovered": [
-    "complex linked list operations",
-    "node deletion algorithms",
-    "list reversal techniques",
-    "cycle detection methods",
-    "index-based node access",
-    "safe list traversal",
-    "memory management for lists",
-    "Floyd's cycle-finding algorithm",
-    "list element aggregation",
-    "node insertion strategies"
-  ],
-  "dataStructures": [
-    "listint_t struct",
-    "integer linked lists",
-    "cyclic lists"
-  ],
-  "algorithms": [
-    "iterative reversal",
-    "Floyd's tortoise and hare",
-    "index-based traversal",
-    "safe cycle handling"
-  ],
-  "complexityAnalysis": {
-    "reversal": "O(n)",
-    "cycle detection": "O(n)",
-    "node access by index": "O(n)",
-    "insertion at position": "O(n)",
-    "deletion at position": "O(n)"
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
   }
 }

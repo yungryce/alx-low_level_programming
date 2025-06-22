@@ -1,88 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "Dynamic Libraries in C",
-  "contextDescription": "Creation and usage of dynamic libraries in C, covering shared object compilation, runtime linking, symbol management, and cross-language integration",
-  "mainLanguage": "c",
-  "supportLanguages": ["shell", "python"],
+  "project_identity": {
+    "name": "0x18-dynamic_libraries",
+    "type": "educational",
+    "scope": "Introduction to dynamic libraries in C, covering creation, usage, and linking at runtime.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to dynamic libraries in C, covering creation, usage, and linking at runtime."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Create and use dynamic libraries",
+      "Link libraries at runtime"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "dynamic-libraries",
-    "shared-objects",
-    "position-independent-code",
-    "runtime-linking",
-    "symbol-resolution",
-    "library-paths",
-    "code-reuse",
-    "cross-language-integration",
-    "library-preloading"
+    "linking"
   ],
-  "skillLevel": "intermediate-advanced",
-  "learningObjectives": [
-    "Create dynamic libraries with appropriate compiler flags",
-    "Understand runtime linking and symbol resolution",
-    "Manage library paths for proper discovery",
-    "Export symbols correctly from shared libraries",
-    "Implement cross-language function calls",
-    "Apply library preloading techniques",
-    "Create shell scripts for library management",
-    "Compare static and dynamic linking approaches",
-    "Understand the role of the dynamic linker"
-  ],
-  "prerequisites": [
-    "C programming fundamentals",
-    "Compilation process understanding",
-    "Basic shell scripting",
-    "Function implementation",
-    "Header file organization"
-  ],
+  "skillLevel": "intermediate",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Work with dynamic libraries"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["C programming basics"],
   "associatedProjects": {
     "previous": "0x17-doubly_linked_lists",
     "next": "0x1A-hash_tables",
-    "related": ["0x09-static_libraries", "0x1C-makefiles"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Dynamic Libraries in Linux",
-      "url": "https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html"
-    },
-    {
-      "name": "Creating and Using Shared Libraries",
-      "url": "https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html"
-    }
-  ],
-  "conceptsCovered": [
-    "shared library structure",
-    "position-independent code",
-    "dynamic linking",
-    "runtime loading",
-    "library paths",
-    "symbol exports",
-    "version management",
-    "dependency resolution",
-    "library preloading",
-    "foreign function interface",
-    "cross-language integration"
-  ],
-  "commandsUsed": [
-    "gcc -fPIC -c *.c",
-    "gcc -shared -o libname.so *.o",
-    "nm -D libname.so",
-    "ldd executable",
-    "LD_LIBRARY_PATH=.",
-    "LD_PRELOAD"
-  ],
-  "buildTools": [
-    "gcc",
-    "ld",
-    "ldd",
-    "nm",
-    "ldconfig",
-    "shell scripts"
-  ],
-  "compilerFlags": [
-    "-fPIC",
-    "-shared",
-    "-L",
-    "-l",
-    "-Wl,-rpath"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

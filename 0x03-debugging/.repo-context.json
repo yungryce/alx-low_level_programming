@@ -1,73 +1,54 @@
 {
-  "contextType": "educational",
-  "contextName": "Debugging in C",
-  "contextDescription": "Introduction to debugging techniques in C programming, including manual tracing, printf debugging, and using debugging tools to identify and fix common errors",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x03-debugging",
+    "type": "educational",
+    "scope": "C programming: debugging techniques and tools.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Covers debugging strategies, error identification, and use of debugging tools in C."
+  },
+  "tech_stack": {
+    "primary": ["c", "shell"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Debugging techniques",
+      "Error identification",
+      "Use of debugging tools"
+    ],
+    "domain": [
+      "c-programming",
+      "debugging"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "debugging",
-    "error-identification",
-    "bug-fixing",
-    "manual-tracing",
-    "printf-debugging",
-    "infinite-loops",
-    "logic-errors",
-    "conditional-bugs",
-    "problem-solving"
+    "c-programming"
   ],
-  "skillLevel": "beginner-intermediate",
-  "learningObjectives": [
-    "Identify and fix common programming errors in C",
-    "Apply systematic debugging approaches to problem-solving",
-    "Use printf statements for debugging information",
-    "Recognize and correct infinite loops",
-    "Fix logic errors in conditional statements",
-    "Repair function implementations to match expected behavior",
-    "Test code with varied inputs to validate fixes",
-    "Read and understand existing code to identify issues"
-  ],
-  "prerequisites": [
-    "C basics (variables, operators)",
-    "Control flow (if/else, loops)",
-    "Functions and parameter passing",
-    "Program execution understanding"
-  ],
+  "skillLevel": "beginner",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Identify and fix errors in C code",
+      "Use debugging tools to analyze program behavior"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Completion of 0x02-functions_nested_loops module"],
   "associatedProjects": {
     "previous": "0x02-functions_nested_loops",
     "next": "0x04-more_functions_nested_loops",
-    "related": ["0x00-hello_world", "0x01-variables_if_else_while"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Debugging Techniques in C",
-      "url": "https://www.geeksforgeeks.org/debugging-in-c/"
-    },
-    {
-      "name": "GDB Tutorial",
-      "url": "https://www.tutorialspoint.com/gnu_debugger/index.htm"
-    }
-  ],
-  "conceptsCovered": [
-    "manual debugging",
-    "printf debugging",
-    "infinite loop identification",
-    "logic error correction",
-    "conditional statement bugs",
-    "leap year calculations",
-    "function parameter validation",
-    "test case development",
-    "systematic debugging approach"
-  ],
-  "debuggingTools": [
-    "GDB",
-    "printf statements",
-    "manual code tracing",
-    "compiler warnings"
-  ],
-  "commonBugTypes": [
-    "infinite loops",
-    "off-by-one errors",
-    "incorrect conditionals",
-    "comparison errors",
-    "leap year calculation errors"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

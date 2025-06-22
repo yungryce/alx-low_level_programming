@@ -1,53 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "Command Line Arguments in C",
-  "contextDescription": "Introduction to handling command-line arguments in C programs using argc and argv parameters to main",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x0A-argc_argv",
+    "type": "educational",
+    "scope": "Introduction to handling command-line arguments in C programs using argc and argv parameters to main.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to handling command-line arguments in C programs using argc and argv parameters to main."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Access and manipulate command line arguments in C programs",
+      "Convert string arguments to appropriate data types"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "command-line-arguments",
-    "c-programming",
-    "parameter-handling",
-    "string-conversion",
-    "input-validation",
     "argc-argv"
   ],
   "skillLevel": "intermediate",
-  "learningObjectives": [
-    "Access and manipulate command line arguments in C programs",
-    "Understand the structure and purpose of argc and argv",
-    "Convert string arguments to appropriate data types",
-    "Implement input validation for command line parameters",
-    "Create programs that respond to different command line inputs",
-    "Handle error cases when required arguments are missing"
-  ],
-  "prerequisites": [
-    "Basic C programming knowledge",
-    "Understanding of pointers and arrays",
-    "String manipulation in C",
-    "Memory management concepts"
-  ],
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Handle command line arguments"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Basic C programming knowledge"],
   "associatedProjects": {
     "previous": "0x09-static_libraries",
     "next": "0x0B-malloc_free",
-    "related": ["0x0F-function_pointers"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Command Line Arguments in C",
-      "url": "https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm"
-    },
-    {
-      "name": "Converting Strings to Numbers",
-      "url": "https://www.geeksforgeeks.org/write-your-own-atoi/"
-    }
-  ],
-  "conceptsCovered": [
-    "argc parameter",
-    "argv array",
-    "program name retrieval",
-    "string to integer conversion",
-    "argument counting",
-    "error handling for missing arguments",
-    "looping through multiple arguments"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

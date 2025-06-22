@@ -1,73 +1,55 @@
 {
-  "contextType": "educational",
-  "contextName": "Functions and Nested Loops in C",
-  "contextDescription": "Introduction to function creation, nested loops, header files, and modular programming concepts in C",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x02-functions_nested_loops",
+    "type": "educational",
+    "scope": "C programming: functions and nested loops fundamentals.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Covers function definition, calling, and nested loop constructs in C."
+  },
+  "tech_stack": {
+    "primary": ["c", "shell"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Function definition and usage",
+      "Nested loops",
+      "Basic C syntax"
+    ],
+    "domain": [
+      "c-programming",
+      "control flow"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "functions",
     "nested-loops",
-    "header-files",
-    "prototypes",
-    "modularity",
-    "code-organization",
-    "function-parameters",
-    "return-values",
-    "recursion"
+    "c-programming"
   ],
-  "skillLevel": "beginner-intermediate",
-  "learningObjectives": [
-    "Create and use custom functions in C",
-    "Develop and use header files with function prototypes",
-    "Implement nested loops for complex repetitive operations",
-    "Design modular code with appropriate separation of concerns",
-    "Apply function parameters and return values effectively",
-    "Implement mathematical operations using functions",
-    "Create custom versions of standard library functions",
-    "Build recursive functions for sequence generation"
-  ],
-  "prerequisites": [
-    "C basics (variables, operators)",
-    "Simple control flow (if/else)",
-    "Basic loops (while, for)",
-    "Understanding of the compilation process"
-  ],
+  "skillLevel": "beginner",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Define and call functions in C",
+      "Implement nested loops for complex iteration"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Completion of 0x01-variables_if_else_while module"],
   "associatedProjects": {
     "previous": "0x01-variables_if_else_while",
     "next": "0x03-debugging",
-    "related": ["0x04-more_functions_nested_loops"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Functions in C",
-      "url": "https://www.tutorialspoint.com/cprogramming/c_functions.htm"
-    },
-    {
-      "name": "Nested Loops",
-      "url": "https://www.geeksforgeeks.org/nested-loops-in-c-with-examples/"
-    },
-    {
-      "name": "Header Files in C",
-      "url": "https://www.tutorialspoint.com/cprogramming/c_header_files.htm"
-    }
-  ],
-  "conceptsCovered": [
-    "function declaration",
-    "function definition",
-    "header files",
-    "function prototypes",
-    "nested loops",
-    "parameter passing",
-    "return values",
-    "include guards",
-    "modular programming",
-    "loop control structures",
-    "fibonacci sequences",
-    "mathematical operations"
-  ],
-  "compilationFlags": [
-    "-Wall",
-    "-Werror",
-    "-Wextra",
-    "-pedantic"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

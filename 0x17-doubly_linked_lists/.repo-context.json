@@ -1,88 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "Doubly Linked Lists in C",
-  "contextDescription": "Implementation and manipulation of doubly linked list data structures in C, covering bidirectional traversal, node insertion and deletion, and advanced list operations",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x17-doubly_linked_lists",
+    "type": "educational",
+    "scope": "Introduction to doubly linked lists in C, covering node structure, traversal, insertion, and deletion in both directions.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to doubly linked lists in C, covering node structure, traversal, insertion, and deletion in both directions."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Implement doubly linked lists",
+      "Traverse, insert, and delete nodes in both directions"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "doubly-linked-lists",
-    "data-structures",
-    "bidirectional-traversal",
-    "node-insertion",
-    "node-deletion",
-    "memory-management",
-    "list-operations",
-    "pointer-manipulation",
-    "palindrome-detection"
+    "node-structure"
   ],
-  "skillLevel": "intermediate-advanced",
-  "learningObjectives": [
-    "Implement a doubly linked list data structure in C",
-    "Manage bidirectional pointer relationships correctly",
-    "Create node insertion algorithms for various positions",
-    "Develop safe node deletion with proper pointer updates",
-    "Traverse lists in both directions efficiently",
-    "Apply doubly linked lists to solve complex problems",
-    "Implement advanced operations like index-based insertion",
-    "Ensure proper memory management for all operations",
-    "Compare singly and doubly linked list implementations"
-  ],
-  "prerequisites": [
-    "Singly linked list implementation",
-    "Dynamic memory allocation",
-    "Pointer manipulation",
-    "Structure handling",
-    "Memory management"
-  ],
+  "skillLevel": "intermediate",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Work with doubly linked lists"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Pointers and dynamic memory in C"],
   "associatedProjects": {
     "previous": "0x15-file_io",
     "next": "0x18-dynamic_libraries",
-    "related": ["0x12-singly_linked_lists", "0x13-more_singly_linked_lists", "0x1A-hash_tables"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Doubly Linked Lists in C",
-      "url": "https://www.geeksforgeeks.org/doubly-linked-list/"
-    },
-    {
-      "name": "Doubly Linked List Operations",
-      "url": "https://www.programiz.com/dsa/doubly-linked-list"
-    }
-  ],
-  "conceptsCovered": [
-    "doubly linked list structure",
-    "bidirectional traversal",
-    "previous and next pointers",
-    "node insertion algorithms",
-    "node deletion techniques",
-    "memory allocation for nodes",
-    "index-based operations",
-    "node counting and summing",
-    "palindrome verification",
-    "list integrity maintenance"
-  ],
-  "dataStructures": [
-    "dlistint_t struct",
-    "bidirectional node structure",
-    "double pointer relationships"
-  ],
-  "memoryOperations": [
-    "malloc for node creation",
-    "free for list cleanup",
-    "pointer redirection"
-  ],
-  "complexityAnalysis": {
-    "insertion": {
-      "beginning": "O(1)",
-      "end": "O(1) with tail pointer",
-      "middle": "O(n) to find position, O(1) to insert"
-    },
-    "deletion": {
-      "beginning": "O(1)",
-      "end": "O(1) with tail pointer",
-      "middle": "O(n) to find position, O(1) to delete"
-    },
-    "traversal": "O(n) in either direction",
-    "access": "O(n) without direct indexing",
-    "search": "O(n)"
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
   }
 }

@@ -1,75 +1,52 @@
 {
-  "contextType": "educational",
-  "contextName": "Static Libraries in C",
-  "contextDescription": "Introduction to creating and using static libraries in C, covering compilation, archiving, indexing, and linking of object files for code reuse and modularity",
-  "mainLanguage": "c",
-  "supportLanguages": ["shell"],
+  "project_identity": {
+    "name": "0x09-static_libraries",
+    "type": "educational",
+    "scope": "Introduction to creating and using static libraries in C, covering compilation, archiving, indexing, and linking of object files for code reuse and modularity.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to creating and using static libraries in C, covering compilation, archiving, indexing, and linking of object files for code reuse and modularity."
+  },
+  "tech_stack": {
+    "primary": ["c", "shell"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Create static libraries from multiple C functions",
+      "Use ar utility to archive object files"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "static-libraries",
     "code-reuse",
-    "compilation-process",
-    "archiving",
-    "object-files",
-    "library-indexing",
-    "header-files",
-    "build-automation",
-    "linker-operations"
+    "compilation-process"
   ],
   "skillLevel": "intermediate",
-  "learningObjectives": [
-    "Create static libraries from multiple C functions",
-    "Use ar utility to archive object files",
-    "Apply ranlib for library indexing",
-    "Develop comprehensive header files for libraries",
-    "Implement shell scripts for library creation",
-    "Link static libraries during program compilation",
-    "Organize code into reusable components",
-    "Understand the compilation and linking process"
-  ],
-  "prerequisites": [
-    "C programming fundamentals",
-    "Function implementation",
-    "Compilation process understanding",
-    "Basic shell commands",
-    "Header file usage"
-  ],
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Create and use static libraries"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["C programming fundamentals"],
   "associatedProjects": {
     "previous": "0x08-recursion",
     "next": "0x0A-argc_argv",
-    "related": ["0x1C-makefiles", "0x0D-preprocessor"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Static Libraries in C",
-      "url": "https://www.geeksforgeeks.org/static-and-dynamic-libraries-in-c/"
-    },
-    {
-      "name": "ar and ranlib Tools",
-      "url": "https://linux.die.net/man/1/ar"
-    }
-  ],
-  "conceptsCovered": [
-    "static library structure",
-    "object file compilation",
-    "archive creation",
-    "library indexing",
-    "header file organization",
-    "function prototyping",
-    "library linking",
-    "build automation",
-    "module interfaces",
-    "code separation"
-  ],
-  "commandsUsed": [
-    "gcc -c *.c",
-    "ar rc libname.a *.o",
-    "ranlib libname.a",
-    "gcc main.c -L. -lname -o program"
-  ],
-  "buildTools": [
-    "gcc",
-    "ar",
-    "ranlib",
-    "shell scripts"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

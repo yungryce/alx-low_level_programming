@@ -1,73 +1,53 @@
 {
-  "contextType": "educational",
-  "contextName": "Even More Pointers, Arrays, and Strings in C",
-  "contextDescription": "Advanced exploration of pointers to pointers, multidimensional arrays, and complex memory operations in C, including implementation of standard library functions and matrix algorithms",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x07-pointers_arrays_strings",
+    "type": "educational",
+    "scope": "Advanced exploration of pointers to pointers, multidimensional arrays, and complex memory operations in C, including implementation of standard library functions and matrix algorithms.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Advanced exploration of pointers to pointers, multidimensional arrays, and complex memory operations in C, including implementation of standard library functions and matrix algorithms."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Understand and manipulate pointers to pointers",
+      "Implement memory manipulation functions like memset and memcpy"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "double-pointers",
     "multidimensional-arrays",
-    "memory-functions",
-    "string-searching",
-    "matrix-algorithms",
-    "pointer-indirection",
-    "2d-arrays",
-    "pointer-to-pointer"
+    "memory-functions"
   ],
   "skillLevel": "advanced",
-  "learningObjectives": [
-    "Understand and manipulate pointers to pointers",
-    "Implement memory manipulation functions like memset and memcpy",
-    "Create string searching and substring location algorithms",
-    "Work with multidimensional arrays effectively",
-    "Apply pointer arithmetic to complex data structures",
-    "Implement matrix traversal algorithms",
-    "Manage multiple levels of memory indirection",
-    "Create functions that modify pointer values"
-  ],
-  "prerequisites": [
-    "Strong understanding of basic pointers",
-    "Array and string manipulation",
-    "Memory concepts in C",
-    "Parameter passing techniques",
-    "Advanced function design"
-  ],
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Manipulate double pointers",
+      "Work with multidimensional arrays"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["Strong understanding of basic pointers"],
   "associatedProjects": {
     "previous": "0x06-pointers_arrays_strings",
     "next": "0x08-recursion",
-    "related": ["0x0B-malloc_free", "0x0C-more_malloc_free"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Pointers to Pointers in C",
-      "url": "https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm"
-    },
-    {
-      "name": "Memory Functions in C",
-      "url": "https://www.geeksforgeeks.org/c-library-memory-functions/"
-    }
-  ],
-  "conceptsCovered": [
-    "double pointer manipulation",
-    "memory filling operations",
-    "memory copying techniques",
-    "character location in strings",
-    "substring searching",
-    "prefix substring measurement",
-    "2D array representation",
-    "matrix diagonal operations",
-    "pointer to pointer setting"
-  ],
-  "memoryFunctions": [
-    "memset equivalent",
-    "memcpy equivalent",
-    "strchr equivalent",
-    "strspn equivalent",
-    "strpbrk equivalent",
-    "strstr equivalent"
-  ],
-  "matrixOperations": [
-    "chessboard representation",
-    "diagonal sum calculation",
-    "2D array traversal"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }

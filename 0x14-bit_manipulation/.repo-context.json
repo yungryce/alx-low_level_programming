@@ -1,80 +1,51 @@
 {
-  "contextType": "educational",
-  "contextName": "Bit Manipulation in C",
-  "contextDescription": "Exploration of bitwise operations and binary-level manipulation in C, covering conversion between binary and decimal, bit setting/clearing/flipping, and practical applications of bit manipulation",
-  "mainLanguage": "c",
+  "project_identity": {
+    "name": "0x14-bit_manipulation",
+    "type": "educational",
+    "scope": "Introduction to bit manipulation in C, covering bitwise operators, masks, and practical applications.",
+    "is_independent": false,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Introduction to bit manipulation in C, covering bitwise operators, masks, and practical applications."
+  },
+  "tech_stack": {
+    "primary": ["c"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "Use bitwise operators",
+      "Apply bit masks"
+    ],
+    "domain": [
+      "c-programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "bit-manipulation",
-    "bitwise-operators",
-    "binary-operations",
-    "binary-conversion",
-    "bit-level-programming",
-    "binary-representation",
-    "endianness",
-    "optimization-techniques",
-    "low-level-programming"
+    "bitwise-operators"
   ],
-  "skillLevel": "intermediate-advanced",
-  "learningObjectives": [
-    "Apply bitwise operators (AND, OR, XOR, NOT, shifts) effectively",
-    "Convert between binary and decimal representations",
-    "Manipulate individual bits within integer values",
-    "Implement efficient bit counting and flipping algorithms",
-    "Create functions for setting, clearing, and reading bits",
-    "Determine system endianness through bit manipulation",
-    "Optimize operations using bit-level techniques",
-    "Parse binary strings and perform validation",
-    "Understand binary representation of data in memory"
-  ],
-  "prerequisites": [
-    "C programming fundamentals",
-    "Integer types and limits",
-    "Binary number system understanding",
-    "Logical operations",
-    "Hexadecimal representation"
-  ],
+  "skillLevel": "intermediate",
+  "projectStructure": {},
+  "outcomes": {
+    "technicalSkills": [
+      "Perform bit manipulation in C"
+    ],
+    "softSkills": []
+  },
+  "prerequisites": ["C programming basics"],
   "associatedProjects": {
     "previous": "0x13-more_singly_linked_lists",
     "next": "0x15-file_io",
-    "related": ["0x1C-makefiles", "0x18-dynamic_libraries"]
+    "related": []
   },
-  "resources": [
-    {
-      "name": "Bitwise Operations in C",
-      "url": "https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/"
-    },
-    {
-      "name": "Bit Manipulation Techniques",
-      "url": "https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/"
-    }
-  ],
-  "conceptsCovered": [
-    "bitwise AND, OR, XOR, NOT",
-    "left and right shifts",
-    "bit setting and clearing",
-    "bit toggling",
-    "bit counting",
-    "binary conversion",
-    "bit extraction",
-    "masking techniques",
-    "endianness detection",
-    "power of 2 calculations",
-    "bits flipping count"
-  ],
-  "bitwiseOperators": [
-    "&  (AND)",
-    "|  (OR)",
-    "^  (XOR)",
-    "~  (NOT)",
-    "<< (left shift)",
-    ">> (right shift)"
-  ],
-  "applications": [
-    "low-level optimization",
-    "embedded systems programming",
-    "cryptography",
-    "data compression",
-    "hardware interfacing",
-    "flag manipulation"
-  ]
+  "files": {
+    "authors_file": "../../AUTHORS",
+    "license_file": "../../LICENSE.txt",
+    "readme_file": "README.md",
+    "requirements_file": ""
+  }
 }
