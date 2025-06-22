@@ -1,9 +1,39 @@
 {
-  "contextType": "educational",
-  "contextName": "Low-Level Programming with C",
-  "contextDescription": "Comprehensive curriculum covering C programming from fundamentals through advanced concepts including memory management, data structures, algorithms, and system programming",
-  "mainLanguage": "c",
-  "supportLanguages": ["shell", "assembly", "python", "make"],
+  "project_identity": {
+    "name": "alx-low_level_programming",
+    "type": "educational",
+    "scope": "Low-Level Programming with C curriculum",
+    "is_independent": true,
+    "version": "1.0.0",
+    "related_versions": [],
+    "description": "Comprehensive curriculum covering C programming from fundamentals through advanced concepts including memory management, data structures, algorithms, and system programming."
+  },
+  "tech_stack": {
+    "primary": ["c", "shell", "assembly", "python", "make"],
+    "secondary": [],
+    "key_libraries": []
+  },
+  "skill_manifest": {
+    "technical": [
+      "C language proficiency",
+      "Algorithm design and analysis",
+      "Data structure implementation",
+      "Memory management",
+      "System-level programming",
+      "Debugging and testing",
+      "Code optimization",
+      "Documentation practices"
+    ],
+    "domain": [
+      "c-programming",
+      "memory-management",
+      "data-structures",
+      "algorithms",
+      "system programming"
+    ]
+  },
+  "components": {},
+  "progression": {},
   "topics": [
     "c-programming",
     "memory-management",
@@ -23,32 +53,6 @@
     "system-calls"
   ],
   "skillLevel": "beginner-to-advanced",
-  "learningSequence": [
-    "hello-world",
-    "variables-if-else-while",
-    "functions-nested-loops",
-    "debugging",
-    "more-functions-nested-loops",
-    "pointers-arrays-strings",
-    "recursion",
-    "static-libraries",
-    "argc-argv",
-    "malloc-free",
-    "preprocessor",
-    "structures-typedef",
-    "function-pointers",
-    "variadic-functions",
-    "singly-linked-lists",
-    "bit-manipulation",
-    "file-io",
-    "doubly-linked-lists",
-    "dynamic-libraries",
-    "hash-tables",
-    "sorting-algorithms",
-    "makefiles",
-    "binary-trees",
-    "search-algorithms"
-  ],
   "projectStructure": {
     "fundamentals": [
       "0x00-hello_world",
@@ -111,14 +115,16 @@
       "Code organization"
     ]
   },
-  "resources": [
-    {
-      "name": "The C Programming Language (K&R)",
-      "url": "https://en.wikipedia.org/wiki/The_C_Programming_Language"
-    },
-    {
-      "name": "Betty Style Documentation",
-      "url": "https://github.com/holbertonschool/Betty/wiki"
-    }
-  ]
+  "prerequisites": [],
+  "associatedProjects": {
+    "previous": "",
+    "next": "",
+    "related": []
+  },
+  "files": {
+    "authors_file": "",
+    "license_file": "",
+    "readme_file": "",
+    "requirements_file": ""
+  }
 }
